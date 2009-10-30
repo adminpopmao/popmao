@@ -1,0 +1,12 @@
+.t3.cc
+  %span.fr{:style=>'margin-left:0.5em;'}
+    = link_to "#{image_tag 'wind_red/post.png', :id=>'td_post'}", new_forum_topic_path(@forum)
+  %span.fr
+    = link_to "#{image_tag 'wind_red/reply.png'}", new_forum_topic_post_path(@forum,@topic)
+  %span.pages
+    =link_to '上一主题', '#'
+    =link_to '下一主题', '#'
+  %span.fl
+  .c
+
+

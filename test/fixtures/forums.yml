@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+blog:
+  id:   1
+  name: 博客
+  position: 10
+  all_keys: 每个人的博客
+  description: 博客
+  parent_id: 0
+
+yangxd_blog:
+  id:  2
+  name: 杨晓东
+  position: 10
+  all_keys: 杨晓东的博客
+  description: 杨晓东的博客
+  parent_id: 1

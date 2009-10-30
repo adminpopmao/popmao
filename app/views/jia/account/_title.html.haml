@@ -1,0 +1,25 @@
+.icon.tab_index.border_tint
+  %ul.tab_nav
+    %li.current
+      = link_to "<span class='imskin'>个人资料<span>", jia_account_index_path, :class=>'imskin'
+    %li
+      = link_to "<span class='imskin'>社区身份<span>", jia_account_path(current_user), :class=>'imskin'
+    %li
+      = link_to "<span class='imskin'>修改密码<span>", change_password_jia_account_path, :class=>'imskin'
+    %li
+      = link_to "<span class='imskin'>主题设置<span>", choose_skin_jia_account_path, :class=>'imskin'
+  .tab_subnav.border_deep
+    %ul
+      %li.icon
+        %span
+          = link_to '基本资料', jia_account_index_path
+      %li.icon
+        %span
+          = link_to '详细资料', detail_jia_account_path
+      %li.icon
+        %span
+          = link_to '联系方式', content_jia_account_path
+      %li.icon
+        %span.icon{:class=>"#{'.tab_current' if @controller.action_name=='change_photo'}"}
+          = link_to '修改头像', change_photo_jia_account_path
+

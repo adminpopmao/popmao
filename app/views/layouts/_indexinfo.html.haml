@@ -1,0 +1,42 @@
+.index-info.cc
+  %table{:cellpadding=>"0", :cellspacing=>"0", :width=>"100%", :style=>"table-layout:fixed;"}
+    %tr
+      %td.tal.s5{:width=>'430'}
+        -if !logged_in?
+          -if !(@controller.controller_name=='sessions' and @controller.action_name=='new')
+            - form_tag session_path do 
+              = "用户名:"
+              = text_field_tag 'login', nil, :maxLength=>"20", :size=>"10", :value=>"", :class=>"input"
+              = "密码:"
+              = password_field_tag 'password', nil, :maxLength=>"20", :size=>"10", :value=>"", :class=>"input"
+              = submit_tag '登录', :class=>'btn'
+        -else
+          %span
+            = link_to '我的主题', '#'
+            = link_to '我的回复', '#'
+            = link_to '我的收藏', '#'
+            = link_to '好友近况', '#'
+            = link_to '我的书签', '#'
+      %td.tar
+        = link_to '统计排行', '/', :id=>'td_KEYsort'
+        #menu_KEYsort.menu.menu-post.cc{:style=>"display:none;"}
+          .menu-b{:width=>"9em;"}
+            %p= link_to '基本信息', '/', :id=>'td_KEYsort_base'
+            %p= link_to '到访IP统计', '/', :id=>'td_KEYsort_ipstate'
+            %p= link_to '管理团队', '/', :id=>'td_KEYsort_team'
+            %p= link_to '管理操作', '/', :id=>'td_KEYsort_admin'
+            %p= link_to '在线会员', '/', :id=>'td_KEYsort_online'
+            %p= link_to '会员排行', '/', :id=>'td_KEYsort_member'
+            %p= link_to '版块排行', '/', :id=>'td_KEYsort_forum'
+            %p= link_to '帖子排行', '/', :id=>'td_KEYsort_article'
+            %p= link_to '标签排行', '/', :id=>'td_KEYsort_taglist'
+        = link_to '銀行', '/', :id=>'td_KEYbank'
+        = link_to '社区服务', '/', :id=>'td_KEYbank'
+        #menu_KEYhack.menu.menu-post.cc{:style=>"display:none;"}
+          .menu-b{:width=>'9em;'}
+            %p= link_to '道具中心', '/', :id=>"td_KEYtoolcenter"
+        = link_to '会员列表', '/', :id=>'td_KEYbank'
+        = link_to '最新帖子', '/', :id=>'td_KEYbank'
+        = link_to '精华区', '/', :id=>'td_KEYbank'
+        = link_to '搜索', '/', :id=>'td_KEYbank'
+        = link_to '帮助', '/', :id=>'td_KEYbank'

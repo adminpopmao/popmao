@@ -1,0 +1,2 @@
+module Jia::AccountHelper
+end

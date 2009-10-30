@@ -1,0 +1,16 @@
+- form_for :post, :url=> forum_topic_posts_path(@forum,@topic), :html=>{:id=>'quick_reply'} do |f|
+  .fastreply
+    %h3.c_stress
+      快速回复
+    .fastreply_main
+      .fastreply_edit
+        %ul
+          %li.eidtor
+            = f.text_area :content, :class=>"inp_txt", :style=>"border-color: rgb(204, 204, 204);background-color:white"
+          %li.newthread_sm
+            = link_to "<span>写好了，发布</span>", "javascript:$('quick_reply').submit();", :class=>"btn_sm"
+            -#= submit_tag '提交'
+            %p.c_weak
+              Ctrl + Enter 快速发布
+          %li.c_tips
+            发帖时请遵守我国法律，网站会将有关你发帖内容、发帖时间以及你发帖时的IP地址的记录保留至少60天，并且只要接到合法请求，即会将这类信息提供给有关政府机构。

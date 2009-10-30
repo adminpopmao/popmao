@@ -1,0 +1,20 @@
+.nav_simple
+  .layout.nav_simplebox
+    %h3
+      = link_to '江海社区', :root
+    %ul.nav_simpleinfo
+      %li.uface
+        %span
+          = image_tag "space_noface.gif", :size=>'20x20'
+        %strong
+          = link_to "#{current_user.login}", '#', :title=>"回我的家", :target=>"_blank"
+      %li.sms
+        = link_to '新消息(0)', '#', :target=>"_blank", :title=>"新消息"
+      %li
+        = link_to '帖子', '#', :target=>"_blank", :title=>"帖子"
+      %li
+        = link_to '我家', '#', :target=>"_blank", :title=>"我家"
+      %li
+        = link_to '退出', :logout, :title=>"退出"
+      %li
+        = render :partial=>'layouts/quickmenu'

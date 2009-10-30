@@ -1,0 +1,89 @@
+.clearall.navgation
+  .layout.nav_header.nav_sz#headernav
+    .nav_special
+    .clearall.nav_common
+      %h3
+        -#= link_to '江海社区', :root
+      %h2
+        -#= link_to '江海社区', :root
+      .nav_uinfo#navuinfo
+        - if current_user
+          %dl
+            %dt
+              = link_to "<span></span>#{image_tag 'space_noface.gif',:size=>'40x40'}", '#'
+            %dd
+              %ul
+                %li
+                  %strong
+                    = current_user.login + say_hello
+                  = link_to '[新消息0]', '#'
+                  = link_to '[退出]', :logout
+                %li
+                  = "金币: #{current_user.gold} 威望: #{current_user.prestige} 不动产：#{show_house current_user}"
+        - else
+          -form_tag session_path do
+            %ul.loginform
+              %li
+                %label.iblock.inp_text
+                  %span.iblock
+                    用户:
+                  = text_field_tag 'login', nil
+                %label.iblock.inp_checkbox
+                = link_to '申请入住', :signup
+              %li
+                %label.iblock.inp_text
+                  %span.iblock
+                    密码:
+                  = password_field_tag 'password', nil
+                %label.iblock.inp_sm
+                  = submit_tag '立即登录'
+                = link_to '找回密码', '#'
+
+  .clearall.nav_item#itemnav
+    .layout
+      %ul.nav_item_list
+        %li
+          = link_to '入城口', '#'
+        %li#showitemnav.active
+          = link_to "<span>公共会所</span>", "#"
+        %li
+          = link_to "我&nbsp;&nbsp;家","#"
+      = render :partial=>'layouts/quickmenu' if current_user
+
+  .layout.nav_forumbox
+    .nav_forum#forumnav
+      .clearall.nav_forum_list
+        - forums = get_all_forum
+        - forums.each do |forum|
+          %dl.f_one
+            %dt
+              = link_to "<span></span>#{forum.name}", forum_path(forum)
+      .c_bot
+        %span
+
+  .layout.nav_search
+    %span.c_top
+      %span
+    .clearall.nav_searchbox
+      .searchform#searchform
+        %label.inp_text
+          %input#keywords{:title=>"输入关键字，搜你想要的...",:value=>"输入关键字，搜你想要的...",:type=>"text"}
+        %label.inp_radio
+          = check_box_tag "search_type"
+          版块
+        %label.inp_radio.inp_radio_active
+          = check_box_tag "search_type","yes"
+          帖子
+        %label.inp_radio
+          = check_box_tag "search_type"
+          店铺
+        %label.inp_radio
+          = check_box_tag "search_type"
+          住户
+        %button#siteSearchButton
+          搜 索
+      .ad_text
+    %span.c_bot
+      %span>
+  .nav_close#closeNavgation
+    关闭

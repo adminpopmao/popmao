@@ -1,0 +1,36 @@
+.main
+  .theme
+    %h4.border_deep
+      请选择你喜欢的家园主题：
+    %input#current_index{ :type => "hidden", :value => "1" }
+    %dl.border_deep
+      %dt
+        %input{ :checked => "", :name => "theme", :type => "radio", :value => "1" }
+        %span
+      %dd
+        %img{ :src => "http://i3.dukuai.com/ui/sns/user/images/default/theme.jpg", :height => "70", :skin => "http://i3.dukuai.com/ui/sns/user/css/skin_blue.css", :alt => "", :width => "410" }
+        %div
+          %h5
+            乡村田野
+    %dl.border_deep
+      %dt
+        %input{ :name => "theme", :type => "radio", :value => "4" }
+        %span
+      %dd
+        %img{ :src => "http://i3.dukuai.com/ui/sns/user/images/ink/theme.jpg", :height => "70", :skin => "http://i3.dukuai.com/ui/sns/user/css/skin_ink.css", :alt => "", :width => "410" }
+        %div
+          %h5
+            山水之间
+    %dl.border_deep
+      %dt
+        %input{ :name => "theme", :type => "radio", :value => "5" }
+        %span
+      %dd
+        %img{ :src => "http://i3.dukuai.com/ui/sns/user/images/prink/theme.jpg", :height => "70", :skin => "http://i3.dukuai.com/ui/sns/user/css/skin_prink.css", :alt => "", :width => "410" }
+        %div
+          %h5
+            糖果色彩妆
+    %span.sumbit
+      %span
+        %button#save
+          保存设置

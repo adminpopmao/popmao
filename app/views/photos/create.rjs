@@ -1,0 +1,1 @@
+page.replace 'myphoto', "<div id='myphoto'><b>上传成功</b></div>"

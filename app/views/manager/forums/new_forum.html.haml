@@ -1,0 +1,31 @@
+#main
+  #app_header.clearfix
+    %strong.profile= link_to '版块设置', '/'
+  %div
+    %ul#main_nav
+      %li= link_to '列表', manager_forums_path
+      %li= link_to '分类', new_manager_forum_path
+      %li.activetab= link_to '版块', '#'
+
+  - form_for [:manager, @forum] do |f|
+    %fieldset
+      %ul
+        %li
+          %label 分类名称:[支持 html 代码]
+          = f.text_field :name, :size=>"30", :class=>"text"
+        %li
+          %label 顺序
+          = f.text_field :position, :size=>"5", :class=>"text"
+        %li
+          %label 版块关键字
+          = f.text_area :all_keys, :size=>"30*3", :class=>"text"
+        %li
+          %label 版块简介
+          = f.text_area :description, :size=>"30*3", :class=>"text"
+        %li
+          %label 所属分类
+          = f.select :parent_id, Forum.find(:all, :conditions=>'parent_id=0').collect {|p| [ p.name, p.id ] }
+    %div{:style=>"text-align:center;"}
+      = f.submit '提交', :class=>"submit"
+      %input.submit{:type=>'reset',:value=>'重置'}
+

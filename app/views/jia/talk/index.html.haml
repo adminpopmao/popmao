@@ -1,0 +1,25 @@
+.main
+  .netfriend_msgboard.broadcast
+    .replybox
+      #icon_face_lists.icon.icon_face.c_weak{ :rel => "content" }
+        %a#icon_face{ :href => "javascript:;", :title => "" }
+          表情
+      %label.atxt.option_tips
+        %textarea#content.tdv{ :maxlength => "140", :rel => "unfold" }
+        %cite.c_weak
+          (
+          %em.c_auxi
+            0
+          \/140)
+      .post_broad.c_weak
+        #result.post_broad_lasttime
+          上次磨叽：今天要继续努力啊！
+        %span.sumbit{ :style => "display: none;" }
+          %span
+            %button#broadcast
+              发布
+    %h4.border_deep
+      好友们正磨叽着
+  .sms.sms_nodata
+    没有磨叽信息。
+

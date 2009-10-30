@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html;charset=utf-8"}
+    %link{:href=>"/images/favicon.ico", :rel=>"shortcut icon"}
+    %title 后台管理
+    = stylesheet_link_tag 'app', 'blue'
+  %body
+    #page
+      #branding.clearfix
+        #blog_logo
+          .logo= image_tag 'user-logo-thumb.gif'
+        #blog_name
+          %h1 后台管理
+        #blog_preview
+          = link_to "回到首页", "/"
+
+      #content.clearfix
+        = yield
+
+        #local
+          #app_list
+            .decorate &nbsp;
+            %ul
+              %li.home.selected= link_to '版块', forums_path
+              %li.feed= link_to '订阅', '/'
+              %li.chat= link_to '闲聊', '/'
+              %li.message= link_to '短信', '/'
+              %li.group= link_to '圈子', '/'
+              %li.link= link_to '收藏', '/'
+              %li.resume= link_to '简历', '/'
+

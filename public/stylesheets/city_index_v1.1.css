@@ -1,0 +1,388 @@
+#wrap {margin:0 auto;width:980px;overflow:hidden;}
+#wrapall {margin:0 auto;width:99.3%;overflow:hidden;}
+#commend {
+	MARGIN: 10px auto; OVERFLOW: hidden; WIDTH: 980px
+}
+#commend IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#commend .left {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #dddddd; PADDING-BOTTOM: 1px; OVERFLOW: hidden; PADDING-TOP: 1px; POSITION: relative
+}
+#commend .right {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #dddddd; PADDING-BOTTOM: 1px; OVERFLOW: hidden; PADDING-TOP: 1px; POSITION: relative
+}
+#commend H3 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 14px; BACKGROUND: url(/images/city_bg_nav.png) repeat-x 0px -96px; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #ffffff; BORDER-LEFT: #ffffff 1px solid; COLOR: #334f67; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+#commend EM {
+	Z-INDEX: 9999; BACKGROUND: url(/images/city_bg_firstcenter.png) no-repeat 0px 0px; OVERFLOW: hidden; WIDTH: 5px; POSITION: absolute; HEIGHT: 5px
+}
+#commend EM.left_top {
+	BACKGROUND-POSITION: -119px -135px; LEFT: 0px; TOP: 0px
+}
+#commend EM.right_top {
+	BACKGROUND-POSITION: -114px -135px; RIGHT: 0px; TOP: 0px
+}
+#commend EM.left_bottom {
+	BACKGROUND-POSITION: -119px -130px; LEFT: 0px; BOTTOM: -1px
+}
+#commend EM.right_bottom {
+	BACKGROUND-POSITION: -114px -130px; RIGHT: 0px; BOTTOM: -1px
+}
+#commend .left {
+	FLOAT: left; WIDTH: 666px; HEIGHT: 343px
+}
+#commend .left H3 {
+	WIDTH: 654px
+}
+#commend .left H3 SPAN {
+	PADDING-RIGHT: 10px; FONT-WEIGHT: 100; FONT-SIZE: 12px; FLOAT: right
+}
+#commend .left H3 SPAN A {
+	COLOR: #334f67
+}
+#commend .left .showpic {
+	CLEAR: left; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #ffffff; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 260px; PADDING-TOP: 0px
+}
+#commend .left .thenotice {
+	CLEAR: left; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #ffffff; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 260px; PADDING-TOP: 0px
+}
+#commend .left .showpic {
+	BACKGROUND: #ffffff; FLOAT: left; OVERFLOW: hidden; WIDTH: 260px; HEIGHT: 215px
+}
+#commend .left .thenotice {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; WIDTH: 250px; PADDING-TOP: 8px
+}
+#commend .left .thenotice H4 {
+	FONT-SIZE: 13px; BACKGROUND: url(/images/city_bg_input_notice.gif) no-repeat 0px 21px; WIDTH: 100%; COLOR: #c06f0f; LINE-HEIGHT: 23px; HEIGHT: 23px
+}
+#commend .left .thenotice UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px
+}
+#commend .left .thenotice LI {
+	BACKGROUND: url(/images/city_icon.gif) no-repeat 3px 8px; TEXT-INDENT: 15px; LINE-HEIGHT: 21px
+}
+#commend .left .topic {
+	PADDING-RIGHT: 15px; DISPLAY: inline; PADDING-LEFT: 13px; BACKGROUND: url(/images/city_bg_firstcenter.png) #ffffff no-repeat 0px 0px; FLOAT: right; PADDING-BOTTOM: 9px; WIDTH: 358px; PADDING-TOP: 0px; HEIGHT: 308px
+}
+#commend .left .topic H2 {
+	font-family: "黑体"; font-weight:100;FONT-SIZE: 18px; MARGIN: 12px 0px 1px; LINE-HEIGHT: 31px; HEIGHT: 31px; TEXT-ALIGN: center; font-famil: "黑体";overflow:hidden;
+}
+#commend .left .topic H2 A {
+	COLOR: #333;
+}
+#commend .left .topic H2 A:hover{color:#0657B2}
+#commend .left .topic P {
+	FONT-SIZE: 14px; MARGIN-BOTTOM: 15px; OVERFLOW: hidden; TEXT-INDENT: 28px; LINE-HEIGHT: 22px; HEIGHT: 65px
+}
+#commend .left .topic P A{ color:#666;}
+#commend .left .topic P A:hover{ color:#0657B2}
+
+#commend .left .topic DL {
+	CLEAR: both; BACKGROUND: #ffffff; WIDTH: 358px; HEIGHT: 23px
+}
+#commend .left .topic DL DT {
+	FONT-SIZE: 14px; FLOAT: left; OVERFLOW: hidden; WIDTH: 280px; LINE-HEIGHT: 23px; HEIGHT: 23px
+}
+#commend .left .topic DL DT SPAN {
+	COLOR: #fc6d02; LINE-HEIGHT: 23px
+}
+#commend .left .topic DL DT A:hover SPAN {
+	COLOR: #0657b2
+}
+#commend .left .topic DL DD {
+	FLOAT: right; OVERFLOW: hidden; WIDTH: 70px; LINE-HEIGHT: 23px; HEIGHT: 23px; TEXT-ALIGN: right
+}
+#commend .toplist {
+	BACKGROUND: url(/images/city_bg_toplist.png) #ffffff no-repeat 0px 0px; OVERFLOW: hidden; WIDTH: 980px; PADDING-TOP: 34px; HEIGHT: 140px
+}
+#commend .toplist H3 {
+	DISPLAY: none
+}
+#commend .toplist UL LI {
+	PADDING-RIGHT: 15px; FONT-SIZE: 14px; BACKGROUND: url(/images/city_icon.gif) no-repeat 15px 7px; FLOAT: left; MARGIN-LEFT: 1px; OVERFLOW: hidden; WIDTH: 310px; TEXT-INDENT: 30px; LINE-HEIGHT: 22px; HEIGHT: 22px
+}
+#commend .toplist UL LI IMG {
+	MARGIN-LEFT: 4px; TOP: 2px
+}
+#commend .right {
+	FLOAT: right; WIDTH: 298px; HEIGHT: 287px
+}
+#commend .right p{overflow:hidden; height:40px;}
+#commend .right H2 {
+	WIDTH: 286px
+}
+#commend .right DL {
+	BACKGROUND: #ffffff; OVERFLOW: hidden; WIDTH: 276px
+}
+#commend .right UL {
+	BACKGROUND: #ffffff; OVERFLOW: hidden; WIDTH: 276px
+}
+#commend .right DL {
+	PADDING-RIGHT: 11px; PADDING-LEFT: 11px; BACKGROUND: #ffffff; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; HEIGHT: 76px
+}
+#commend .right DL DT {
+	BORDER-BOTTOM: #c7c7c7 1px dotted; HEIGHT: 76px
+}
+#commend .right DL DD {
+	BORDER-BOTTOM: #c7c7c7 1px dotted; HEIGHT: 76px
+}
+#commend .right DL DT {
+	FLOAT: left; WIDTH: 96px
+}
+#commend .right DL DT IMG {
+	BORDER-RIGHT: #dddddd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #dddddd 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #dddddd 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #dddddd 1px solid
+}
+#commend .right DL DD {
+	FLOAT: left; WIDTH: 170px
+}
+#commend .right DL DD H4 {
+	FONT-SIZE: 14px; OVERFLOW: hidden; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+#commend .right DL DD H4 A {
+	COLOR: #444
+}
+#commend .right UL {
+	PADDING-RIGHT: 11px; PADDING-LEFT: 11px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+#commend .right UL LI {
+	CLEAR: both; FONT-SIZE: 13px; BACKGROUND: url(/images/city_icon.gif) no-repeat 0px 7px; FLOAT: left; OVERFLOW: hidden; WIDTH: 100%; TEXT-INDENT: 10px; PADDING-TOP: 3px; HEIGHT: 18px
+}
+#commend .right UL LI A {
+	COLOR: #4d4d4d
+}
+#commend .right UL LI A:hover {
+	COLOR: #0657b2
+}
+#commend .right UL LI SPAN {
+	DISPLAY: inline-block;*display:inline;zoom:1; BACKGROUND: url(/images/city_icon.gif) no-repeat; MARGIN-LEFT: 3px; OVERFLOW: hidden; WIDTH: 23px; TEXT-INDENT: -9999px; ZOOM: 1; POSITION: relative; HEIGHT: 11px
+}
+#commend .right UL LI SPAN.hot {
+	BACKGROUND-POSITION: 0px -20px; TOP: 0;*top:-4px;
+}
+#commend .right UL LI SPAN.new {
+	BACKGROUND-POSITION: 0px -35px; TOP: 0;*top:-4px;
+}
+#commend .other {
+	FLOAT: right; WIDTH: 300px; PADDING-TOP: 10px
+}
+#commend .other IMG {
+	FLOAT: left
+}
+#commend .other .total {
+	MARGIN-TOP: 10px; BACKGROUND: url() no-repeat 0px -10px; FLOAT: left; WIDTH: 300px; TEXT-INDENT: 40px; LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+#commend .other .total SPAN {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #c06f0f; PADDING-TOP: 0px
+}
+#MainPromotionBanner {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 262px; PADDING-TOP: 0px
+}
+#MainPromotionBanner #SlidePlayer {
+	MARGIN: 0px auto; POSITION: relative
+}
+#MainPromotionBanner .Slides {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; HEIGHT: 213px
+}
+#MainPromotionBanner .Slides LI {
+	BORDER-RIGHT: #e1e1e1 1px solid; BORDER-TOP: #e1e1e1 1px solid; BORDER-LEFT: #e1e1e1 1px solid; WIDTH: 260px; BORDER-BOTTOM: #e1e1e1 1px solid; HEIGHT: 211px; TEXT-ALIGN: center
+}
+#MainPromotionBanner .Slides LI A P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 0px; MARGIN: 0px; CURSOR: pointer; COLOR: #585858; PADDING-TOP: 2px
+}
+#MainPromotionBanner .Slides LI A:hover {
+	TEXT-DECORATION: none
+}
+#MainPromotionBanner .Slides IMG {
+	WIDTH: 260px; HEIGHT: 190px
+}
+#MainPromotionBanner .SlideTriggers {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 10; RIGHT: 5px; PADDING-BOTTOM: 0px; MARGIN: 0px; BOTTOM: 28px; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; LIST-STYLE-TYPE: none; POSITION: absolute; HEIGHT: 20px
+}
+#MainPromotionBanner .SlideTriggers LI {
+	BORDER-RIGHT: #7fb12d 1px solid; BORDER-TOP: #7fb12d 1px solid; DISPLAY: inline; FONT-SIZE: 12px; BACKGROUND: #ffffff; FLOAT: left; MARGIN: 2px; OVERFLOW: hidden; BORDER-LEFT: #7fb12d 1px solid; WIDTH: 15px; CURSOR: pointer; COLOR: #7fb12d; LINE-HEIGHT: 15px; BORDER-BOTTOM: #7fb12d 1px solid; HEIGHT: 15px; TEXT-ALIGN: center
+}
+#MainPromotionBanner .SlideTriggers LI.Current {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: #7fb12d; MARGIN: 2px 3px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 16px; COLOR: #fff; LINE-HEIGHT: 16px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 16px
+}
+.forumlist {
+	BORDER-RIGHT: #c6dca2 1px solid; BORDER-TOP: #c6dca2 1px solid; BACKGROUND: url(/images/city_bg_forumlist.png) repeat-x 0px 0px; BORDER-LEFT: #c6dca2 1px solid; WIDTH: 978px; BORDER-BOTTOM: #c6dca2 1px solid; POSITION: relative;margin-bottom:10px;
+}
+.forumlist EM {
+	BACKGROUND: url(/images/city_icon.gif) no-repeat 0px -54px; WIDTH: 7px; POSITION: absolute; TOP: -1px; HEIGHT: 7px
+}
+.forumlist EM.top_left {
+	BACKGROUND-POSITION: -7px -54px; LEFT: -1px
+}
+.forumlist EM.top_right {
+	RIGHT: -1px
+}
+.forumlist .collapsed {
+	Z-INDEX: 10; RIGHT: 15px; WIDTH: 8px; CURSOR: pointer; POSITION: absolute; TOP: 14px; HEIGHT: 9px
+}
+.forumlist H3 {
+	BORDER-RIGHT: #ffffff 1px solid; FONT-SIZE: 14px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 100%; COLOR: #334f67; TEXT-INDENT: 20px; LINE-HEIGHT: 31px; HEIGHT: 31px
+}
+.forumlist .forumtitle {
+	OVERFLOW: hidden; WIDTH: 520px
+}
+.forumlist .forumthread {
+	OVERFLOW: hidden; WIDTH: 90px
+}
+.forumlist .forumthreadno {
+	OVERFLOW: hidden; WIDTH: 60px
+}
+.forumlist .lastpost {
+	OVERFLOW: hidden; WIDTH: 130px
+}
+.forumlist .threadmaster {
+	OVERFLOW: hidden; WIDTH: 174px
+}
+.forumlist UL.tips {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #e8e8e8 1px solid
+}
+.forumlist DL.forumcontent {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #e8e8e8 1px solid
+}
+.forumlist .tips {
+	LINE-HEIGHT: 27px; HEIGHT: 27px
+}
+.forumlist .tips LI {
+	FLOAT: left; TEXT-ALIGN: center
+}
+.forumlist .tips LI.forumtitle {
+	TEXT-INDENT: 71px; TEXT-ALIGN: left
+}
+.forumlist .forumcontent {
+	OVERFLOW: hidden; HEIGHT: 70px
+}
+.forumlist .forumcontent DT {
+	FLOAT: left
+}
+.forumlist .forumcontent DD {
+	FLOAT: left
+}
+.forumlist .forumcontent .forumtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+.forumlist .forumcontent DT IMG {
+	FLOAT: left; MARGIN-LEFT: 25px
+}
+.forumlist .forumcontent DT DIV {
+	FLOAT: left; MARGIN-LEFT: 15px; WIDTH: 400px; HEIGHT: auto
+}
+.forumlist .forumcontent DT H4 {
+	FONT-SIZE: 14px; OVERFLOW: hidden; LINE-HEIGHT: 21px; HEIGHT: 21px
+}
+.forumlist .forumcontent DT H4 SPAN {
+	FONT-WEIGHT: 100; FONT-SIZE: 12px
+}
+.forumlist .forumcontent DT P {
+	OVERFLOW: hidden; COLOR: #666; LINE-HEIGHT: 17px; HEIGHT: 17px
+}
+.forumlist .forumcontent DT .cfroum {
+	PADDING-LEFT: 11px; BACKGROUND: url(/images/city_icon.gif) no-repeat 0px -66px
+}
+.forumlist .forumcontent DT .cfroum A {
+	MARGIN: 0px 5px; COLOR: #fc6d02
+}
+.forumlist .forumcontent .forumthread {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 24px; PADDING-TOP: 24px; TEXT-ALIGN: center
+}
+.forumlist .forumcontent .forumthreadno {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 24px; PADDING-TOP: 24px; TEXT-ALIGN: center
+}
+.forumlist .forumcontent .lastpost {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; TEXT-ALIGN: left
+}
+.forumlist .forumcontent .lastpost EM {
+	DISPLAY: block; BACKGROUND: none transparent scroll repeat 0% 0%; OVERFLOW: hidden; WIDTH: 130px; LINE-HEIGHT: 17px; POSITION: static; HEIGHT: 35px
+}
+.forumlist .forumcontent .lastpost SPAN {
+	DISPLAY: block
+}
+.forumlist .forumcontent .threadmaster {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; WIDTH: 144px; COLOR: #069; PADDING-TOP: 15px; TEXT-ALIGN: center
+}
+.forumlist .forumcontent .threadmaster A {
+	DISPLAY: inline; MARGIN: 0px 4px; ZOOM: 1; HEIGHT: 15px
+}
+.citys {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 148px; BACKGROUND: url(/images/city_19city_img5.jpg) no-repeat 0px 0px; PADDING-BOTTOM: 12px; MARGIN: 10px auto 0px; OVERFLOW: hidden; WIDTH: 832px; PADDING-TOP: 15px; HEIGHT: 42px
+}
+.citys LI {
+	BORDER-RIGHT: #666666 1px solid; FONT-SIZE: 14px; FLOAT: left; MARGIN: 0px -3px 12px 0px; WIDTH: 85px; HEIGHT: 14px; TEXT-ALIGN: center
+}
+.links {
+	BORDER-RIGHT: #dddddd 1px solid; BORDER-TOP: #dddddd 1px solid; BACKGROUND: #f9f9f9; MARGIN: 10px 0px; BORDER-LEFT: #dddddd 1px solid; WIDTH: 978px; BORDER-BOTTOM: #dddddd 1px solid; HEIGHT: 43px
+}
+.links DT {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FLOAT: left; PADDING-BOTTOM: 6px; OVERFLOW: hidden; WIDTH: 88px; PADDING-TOP: 6px
+}
+.links DD {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 872px; PADDING-TOP: 8px
+}
+.links DD A {
+	DISPLAY: inline; LINE-HEIGHT: 15px; MARGIN-RIGHT: 5px; ZOOM: 1; HEIGHT: 15px
+}
+.links DD A.join {
+	COLOR: #fc6d02
+}
+.show_box {
+margin-bottom:10px; OVERFLOW: hidden; WIDTH: 980px; HEIGHT: 150px
+}
+.show_left {
+	BACKGROUND: url(/images/jiaxing_show_left.gif); FLOAT: left; WIDTH: 50px; HEIGHT: 150px
+}
+.show_middle {
+	BACKGROUND: url(/images/jiaxing_show_bj.gif); FLOAT: left; WIDTH: 920px; HEIGHT: 150px
+}
+.show_pic {
+	DISPLAY: inline; FLOAT: left; MARGIN: 15px 0px 0px 35px; OVERFLOW: hidden; WIDTH: 142px; TEXT-ALIGN: center
+}
+.show_pic A {
+	COLOR: #626262
+}
+.show_pic A:hover {
+	COLOR: #e6b93c
+}
+.show_pic A IMG {
+	BORDER-RIGHT: #d2d2d2 1px solid; BORDER-TOP: #d2d2d2 1px solid; MARGIN-BOTTOM: 5px; BORDER-LEFT: #d2d2d2 1px solid; BORDER-BOTTOM: #d2d2d2 1px solid
+}
+.show_pic A:hover IMG {
+	BORDER-RIGHT: #e6b93c 1px solid; BORDER-TOP: #e6b93c 1px solid; BORDER-LEFT: #e6b93c 1px solid; BORDER-BOTTOM: #e6b93c 1px solid
+}
+.show_right {
+	BACKGROUND: url(/images/jiaxing_show_right.gif); FLOAT: left; WIDTH: 10px; HEIGHT: 150px
+}
+
+/* 190_60 * 5 广告代码 */
+.ad_190_60_5 {margin-bottom:10px;width:980px;overflow:hidden;}
+	.ad_190_60_5 li {float:left;margin-right:6px;width:190px;text-align:center;}
+	
+/*城市群*/
+#citylink {overflow:hidden; margin:0 auto 10px; width:980px; height:auto;}
+
+	#citylink .bj_top, #citylink .bj_top span, #citylink .bj_bottom, #citylink .bj_bottom span, #citylink h3{background:transparent url(/images/first_box_bg.png) repeat-x scroll 0 0;}
+	#citylink .bj_top, #citylink .bj_top span, #citylink .bj_bottom, #citylink .bj_bottom span{background-repeat:no-repeat;display:block;overflow:hidden;height:6px;}
+	#citylink .bj_top{position:relative;margin-bottom:-6px;background-position:-6px -175px;}
+	#citylink .bj_bottom{background-position:-6px -181px;margin-top:-6px;}
+		#citylink .bj_top span,#citylink .bj_bottom span{float:right;width:6px;}
+		#citylink .bj_top span{background-position:0 -175px;}
+		#citylink .bj_bottom span{background-position:0 -181px;}
+	#citylink h3 {margin-bottom:-1px; background-position:0 -187px;height:32px;line-height:32px;text-indent:10px;border-left:1px solid #E3E3E3;border-right:1px solid #E3E3E3;color:#334F64;font-size:16px; font-weight: bold;}
+	#citylink .tips {float:right;margin:-31px 10px 0 0;height:30px;line-height:30px;color:#000000;_display:inline;}
+#citylink dl {overflow:hidden;padding:7px 0 0 10px;width:968px;height:122px;font-size:14px;border:1px solid #E3E3E3;}
+#citylink dt {overflow:hidden;float:left;margin-bottom:7px;width:110px;height:29px;background:transparent url(/images/first_img.png) no-repeat scroll 0 -140px;}
+	#citylink #intro a{font-weight:bold;color:#92A922;}
+	#citylink #countrymen{background-position:0 -169px;}
+	#citylink #city{height:44px;background-position:0 -198px;}
+#citylink dd {margin-bottom:7px;float:left;width:847px;height:27px;border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;border-right:1px solid #e7e7e7;background:transparent url(/images/first_box_bg.png) repeat-x scroll 0 -188px;}
+	#citylink #community{overflow:hidden;height:42px;background:#f8f8f8;line-height:20px;}
+	#citylink dd li {display:inline;float:left;margin:0 9px 0 8px;padding-top:3px;height:22px;line-height:22px;width:auto;}
+		#citylink #community li{margin:0 11px 0 8px;height:18px;padding-top:1px;}
+#citylink dd ul {width:100%;}
+#citylink dd li {float:left;}
+#citylink a {color:#666666}
+#citylink a:hover {color:#0657B2;}

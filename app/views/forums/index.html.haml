@@ -1,0 +1,41 @@
+#wrap
+  .forumlist
+    %em.top_left
+    %em.top_right
+    %h3 城市导航
+    #forumlist_1
+      %ul.tips
+        %li.forumtitle
+          论坛
+        %li.forumthread
+          主题
+        %li.forumthreadno
+          帖数
+        %li.lastpost
+          最后发表
+        %li.threadmaster
+          版主
+      - @forums.each do |forum|
+        %dl.forumcontent
+          %dt.forumtitle
+            = image_tag "city_newpost.gif"
+            %div
+              %h4.c_4
+                = link_to "#{forum.name}", forum_path(forum)
+                %span.c_069
+                  = "(今日：#{Topic.count_topics_of_today(forum)})"
+              %p
+                =h forum.description
+          %dd.forumthread
+            = Topic.count_topics(forum)
+          %dd.forumthreadno
+            = Post.count_posts(forum)
+          %dd.lastpost
+            %em
+              - p = forum.get_last_topic
+              = link_to "#{p.subject}", forum_topic_path(forum,p), :class=>"c_069", :target=>"_blank" if p
+              = '暂无新贴' if !p
+            %span
+              = link_to "#{show_time(p.created_at)}", '#' if p
+          %dd.threadmaster
+            = link_to '版主竞聘中', '#'

@@ -1,0 +1,99 @@
+#container.circle.container.snshome
+  .imskin.c_top
+  <!-- sns主要内容 -->
+  .circle.snsbox
+    .imskin.c_top
+    .imskin.c_bottom
+    <!-- sns左侧导航 -->
+    .circle.left
+      = render :partial=>'layouts/jia_menu'
+      .friendonline
+        %h3 我的好友
+        .importfriend
+          = link_to '导入论坛(博客)好友', '#'
+    #show_message
+    .main#main
+      %dl.minfo
+        <!-- 用户头像资料 -->
+        %dt
+          .uface_full
+            %span
+            = image_tag 'http://avatar.19lou.com/m/4/127/12252551.jpg', :width=>120, :height=>120, :border=>0
+          %ul
+            %li
+              = link_to '更换头像', '#'
+            %li
+              = link_to '完善资料', jia_account_index_path
+        <!-- 用户名 Twitter -->
+        %dd
+          %h5
+            %em
+              = current_user.login #ntyangxd
+          %span.view_home
+            = link_to 'TA访问我的家时的门面', '#', :class=>'icon'
+            %span
+          <!-- 访问统计 -->
+          %ul.view_stati
+            %li
+              %span.c_auxi 金币：
+              = current_user.gold
+            %li
+              %span.c_auxi 威望：
+              = current_user.prestige
+          <!-- 磨叽 -->
+          #broard_show.broard_show.replybox
+            .icon.icon_face.c_weak{:rel=>"content_nm"}
+              = link_to '表情', '#', :id=>"icon_face"
+            %label.atxt
+              %span.imskin
+                >
+              %textarea{:maxlength=>"140", :entermethod=>"entercallback", :id=>"content_nm", :rel=>"unfold"}
+                小心思、得意事、不爽ing……想说就说
+              %cite.c_weak
+                (
+                %em.c_auxi
+                  0
+                /140)
+            .lastbroard_post.c_auxi#result
+            .broard_btn
+              %span.sumbit
+                %span
+                  %button#submitbtn
+                    发布
+      <!-- 新消息提示 -->
+      .box.message
+        %h4
+          %span
+            新消息提示
+        .content
+          .msg_common
+            没有收到新的短消息
+      <!-- 好友动态内容区 -->
+      .dynamic.dynamic_index
+        %h4
+          好友动态
+        .dynamic_confall
+          #showmoredynamic
+            = link_to '分类查看', '#', :class=>"imskin"
+            %ul.dropmenu#moredynamic
+              %li
+                = link_to '全部', '#', :class=>"choosed"
+              %li
+                = link_to '帖子', '#'
+              %li
+                = link_to '相册', '#'
+              %li
+                = link_to '好友', '#'
+          %span.icon
+            = link_to '动态设置', '#', :class=>"imskin"
+        .dynamic_main
+          .msg_common
+            没有好友动态
+          .msg_allwaystips
+            %strong
+              朋友们的靓照、新鲜事、生活经在哪里？别着急，
+              = link_to '把朋友们都挖出来吧', '#'
+              ，或者
+              = link_to '邀请好友加入', '#'
+  = render :partial=>'layouts/jia_right'
+.imskin.c_bottom

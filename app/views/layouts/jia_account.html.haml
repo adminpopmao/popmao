@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title 江海社区，我的网上家园
+    %meta{:name=>"keywords", :content=>"个人空间"}
+    %meta{:name=>"description", :content=>"个人空间"}
+    %link{:href=>"/images/favicon.ico", :rel=>"shortcut icon"}
+    = stylesheet_link_tag 'perspace_header', 'perspace', 'skin_blue'
+    = stylesheet_link_tag 'sns_index' if @controller.controller_name.downcase == 'welcome'
+    = javascript_include_tag :defaults
+  %body
+    = render :partial=>'layouts/jia_top'
+
+    .circle.container#container
+      .imskin.c_top
+      <!-- sns左侧导航 -->
+      .circle.left
+        %span.imskin.c_top
+        #leftcontent.content
+          = render :partial=>'layouts/jia_menu'
+        %span.imskin.c_bottom
+      #right.circle.right
+        .imskin.c_top
+        %h3.icon.icon_account 帐户管理
+        = render :partial=>'title'
+        #show_message
+        = yield
+      .imskin.c_bottom
+
+    = render :partial=>'layouts/footer'

@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="html">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>商业信息 -  PHPwind  - Powered by PHPWind</title>
+    <meta name="generator" content="PHPWind 7.5RC" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="商业信息" />
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <link rel='archives' title='PHPwind' href='http://localhost/simple/' />
+    <base id="headbase" href="http://localhost/" />
+    <link rel="stylesheet" type="text/css" href="images/wind-reset.css" />
+
+    <!--css--><style type="text/css">
+      #html{background:#FBF6EB;}
+      body{font-size:9pt; background:#FBF6EB;font-family:Verdana; color:#333;}
+      h3,h2{display:inline;}
+      h2 a{color:#000;}/*h2 版块列表页版块名称标题*/
+      h3 a{color:#333;}/*h3 文章列表页文章标题*/
+      .v-in input{vertical-align:baseline;} /*列表下滑线对齐*/
+      h4{margin:20px 0 10px;font-size:1.1em}
+      /*a link 基本连接颜色*/
+      a{text-decoration:none;color:#333333;}
+      a:hover{text-decoration:underline;}
+      /*内补丁*/
+      .pdD{padding:.3em .5em}
+      .p10{padding:10px;}
+      /*main color 数值自定义*/
+      .f_one,.t_one,.r_one{background:#ffffff;}
+      .f_two,.t_two,.r_two{background:#fdf8f8;}
+      /*按钮*/
+      .btn{border-color:#db3228;margin-right:1em;color:#fff;background:#db3228;}
+      .btn,.bt{border-width:1px;cursor:pointer;padding:.1em 1em;*padding:0 1em;font-size:9pt; line-height:130%; overflow:visible;}
+      .bt{cursor:pointer;background:#f7f7f7 url(images/wind_red/btn.png) 0 -52px repeat-x;vertical-align:middle;border-color: #e4e4e4 #cccccc #cccccc #e4e4e4;}
+      /*伪类按钮*/
+      .bta{cursor:pointer;color:#333333;padding:2px 8px;background:#fdf8f8;margin:2px;white-space:nowrap;border:1px solid #ffe6e8;}
+      .abtn2 a{border:1px solid #fbfdff;padding:2px 4px 1px;color:#555;}
+      .abtn2 a:hover{border:1px solid #2195d2;color:#2195d2;text-decoration:none;background:#fff;}
+      /*form*/
+      textarea,input,select{font:12px Arial;padding:1px 3px 0 3px;vertical-align:middle;margin-bottom:1px;}
+      select{border:solid 1px #ffe6e8;}
+      .input{border: 1px solid; border-color: #c0c0c0 #ededed #ededed #c0c0c0;padding:2px 0px 2px 1px;font-size:1.0em;vertical-align:middle;color:#000;}
+      textarea{border: 1px solid; border-color: #c0c0c0 #ededed #ededed #c0c0c0;}
+      /*全局*/
+      #header{min-width:980px;background:url(images/wind_red/bg.png) 0 -2px repeat-x}
+      #head{width:960px;max-width:1200px;margin:0 auto;}
+      #nav{width:960px;max-width:1200px;margin:auto;height:32px;}
+      #main{width:960px;max-width:1200px;margin:0 auto;}  /*内容*/
+      #footer{padding:0 0 30px;width:960px;margin:0 auto;max-width:1200px;}
+      .bottom{margin:0 auto 10px;border:1px solid #ffe6e8;background:#fdf8f8;}
+      .bottom ul{ padding:5px; margin:0; list-style:none;}
+      .bottom ul li{ padding:0 10px 0 0;display:inline;}
+      .bottom ul li a{white-space:nowrap;}
+      /*位置*/
+      #breadCrumb{padding:10px;color:#999;background:url(images/wind_red/bg.png) 0 -10px repeat-x;border-top:1px solid #f4c6ca;}
+      /*公告*/
+      .noticebg{background:url(images/wind_red/bg.png) 0 -10px repeat-x;}
+      #notice{padding:10px;height:18px;overflow:hidden;background:url(images/wind_red/file/anc.png) 12px 12px no-repeat;}
+      #notice li{list-style:none;float:left;white-space:nowrap;padding-left:1.6em;height:18px;}
+      #notice a{padding-right:.5em;}
+      /*文字ad*/
+      .ad-text{margin:0 auto 8px;border:1px solid #ffe6e8;border-bottom:0;background:#ffffff;}
+      .ad-text .tr3 td,.ad-text .tr3 th{border-bottom:1px solid #ffe6e8;padding:.4em .6em;}
+      /*顶部导航*/
+      .topbar{background:#eaeaea url(images/wind_red/topbar.png) 0 bottom repeat-x;height:27px;overflow:hidden;}
+      #nav-operate{border-top:0;padding:4px 0 2px;width:960px;margin:auto;width:98%;}
+      #nav-operate a{margin-right:5px;color:#333333;}
+      #nav-operate li{float:left;margin-left:1em;zoom:1;}
+      #nav-operate li a{margin-right:0;white-space:nowrap;vertical-align:baseline;}
+
+      /*栏目导航*/
+      #nav-global,.nav-left,.nav-right{background:url(images/wind_red/nav-bg.png);}
+      .nav-left,.nav-right{width:10px;height:32px;}
+      .nav-left{ background-position:0 0;_margin-right:-3px;}
+      .nav-right{ background-position:0 -32px;_margin-left:-3px;}
+      #nav-global{ background-position:0 -64px;height:32px;overflow:hidden;}
+      #nav-global ul{font-size:14px; font-weight:700;padding-left:15px;}
+      #nav-global li{margin:5px 5px 0 0;float:left;background:url(images/wind_red/nav-li.png) 5px right no-repeat;}
+      #nav-global li a{float:left;color:#ffffff;padding:0 14px 0 7px;height:27px;line-height:23px;}
+      #nav-global .current,#nav-global .current a{background:url(images/wind_red/nav-cur.png) 0 0 no-repeat;line-height:27px;}
+      #nav-global .current a{background-position:bottom right;color:#db3228;margin-left:5px;display:inline;}
+      #nav-s{background:url(images/wind_red/nav-search.png);width:245px;height:32px;overflow:hidden; float:right;_margin-left:-3px;}
+      #nav-s .fr{margin:12px 18px 0 0;line-height:14px;}
+      .s-btn,.s-input{background:none;border:0;}
+      .s-btn{ cursor:pointer;width:42px;height:21px;vertical-align:middle !important;vertical-align:baseline;}
+      .s-input{height:17px;padding:4px 1px 0;width:97px;margin:6px 0 0 48px;}
+      .index-info{background:#ffffff;width:960px;max-width:1200px;margin:0 auto;}
+      .index-info td{padding:6px 0 6px 10px;line-height:24px;}
+      .index-info a{margin-right:10px;}
+      .forum-info{background:#ffffff;padding:0 10px 6px 10px;line-height:1;border-bottom:1px solid #f4c6ca;}
+      /*用户登录*/
+      .user-table td{padding:1em 1em .5em 2em;}
+      /*table*/
+      .t{border:1px solid #f4c6ca;background:#ffffff;}
+      .t table{width:100%;}
+      .t3{margin:5px auto;}
+      .t5{border:1px solid #ffe6e8;}
+      .t,.t5{margin:0 auto 10px; height:auto; overflow:hidden;}
+      /*table head*/
+      .h{border-bottom:1px solid #f4c6ca;background:url(images/wind_red/h.png) 0 bottom repeat-x;text-align:left;color:#db3228;padding:2px 10px 0; line-height:220%;}
+      .h span{font-weight:normal;}
+      .h h2{font-weight:bold}
+      .h a{font-family:Arial;color:#db3228}
+      .h span a,.h span{color:#d75353;}
+      .closeicon{margin-top:.3em}
+      .cate_fold{padding:0 5px 0 5px;margin-bottom:2px;text-decoration:none;}
+      .cate_fold:hover{text-decoration:none;}
+      /*table tr1*/
+      .tr1 th{padding:5px 10px;text-align:left;vertical-align:top;font-weight:normal;}
+      .tr1 td.td1{border-bottom:1px solid #ffe6e8;}
+      /*table tr2*/
+      .tr2{background:#ffffff url(images/wind_red/tr2.png) 0 bottom repeat-x;color:#888888;}
+      .tr2 td,.tr2 th{line-height:18px;border-bottom:1px solid #ffe4e6;padding:2px 6px;*padding:4px 6px 1px;}
+      .tr2 a{color:#888888;margin:0 2px 0}
+      /*table tr3*/
+      .tr3{ line-height:1.5;}
+      .tr3 td,.tr3 th{border-bottom:1px solid #ffe6e8;padding:.6em;}
+      .tr3 th{text-align:left;font-weight:normal;}
+      .z .tr3:hover{background:#fdf8f8;}
+      .tr td,.tr th{padding:2px}
+      .tr5 td{border-right:1px solid #ffe6e8;border-bottom:1px solid #ffe6e8;padding-left:.5em;}/*帖子表格*/
+      /*浏览页*/
+      h1,.read_h1{font-size:16px;margin:15px;color:#3366cc; font-weight:700;line-height:1;}
+      .honor{line-height:130%;padding:3px 8px 5px 12px;overflow:hidden;color:#777;}
+      .tpc_content{font-family:Arial;padding:0 15px 3em 15px;margin:0;line-height:2em;}
+      .tpc_content font{line-height:1.5em;}
+      .tpc_content a{text-decoration:none;color:#0070AF;}
+      .tpc_content a:hover{text-decoration:underline}
+      .tpc_content ol{list-style-type:decimal;}
+      .tpc_content ul{list-style-type:disc;}
+
+      .tips{background:#fdf8f8;border:1px solid #ffe6e8;padding:3px 5px;}
+      .tips2{padding:10px 0;border-top:1px dashed #ffe6e8;}
+      .tips,.tips2{margin:5px 15px 5px 15px;text-align:left;line-height:24px;float:left;display:inline;}
+      .tips2 li{list-style:none;width:30%;height:24px;min-width:210px;margin:0 10px 0 0;float:left;overflow:hidden;text-overflow:ellipsis;}
+
+      .tiptop{border-bottom:1px dashed #ccc ;padding:0 0 0 1px;height:27px;line-height:27px;margin:0 15px;}
+      .tipad{margin:20px 15px 10px;}
+      .tipad .fr a{color:#888;}
+      blockquote{padding-left:1em;}
+      .blockquote3{width:80%;border:1px dashed #CCC;background:#f7f7f7 url(images/blockquote3.png) right top no-repeat;margin:10px 0;padding:5px 10px;}
+      .blockquote3 .quote{color:#999;font-size:12px;}
+      .blockquote3 .text{padding:0 10px 10px 10px;}
+      .blockquote{zoom:1;padding:5px 8px 5px;line-height:1.3;border:1px solid #f8d0a5;background:#fffae1;color:#000;margin:0 15px;}
+      .quote{width:67%;}
+      .block-img{background:#fffae1 url(images/attention.png) 8px 6px no-repeat;padding-left:28px;margin:0 15px 10px;}
+      .blockquote2{border: 1px solid; border-color: #c0c0c0 #ededed #ededed #c0c0c0;margin:0px;padding:0 0 0 2em;line-height:2em;overflow:hidden;background:#fff}
+      .blockquote2 ol{margin:0 0 0 1.5em;padding:0;}
+      .blockquote2 ol li{border-left:1px solid #ccc;background:#f7f7f7;padding-left:10px;font-size:12px;font-family:"Courier New" serif;list-style-type:decimal-leading-zero;padding-right:1em;}
+      .blockquote2 ol li:hover{background:#fff;color:#008ef1;}
+      .blockquote2 ol li{list-style-type:decimal;}
+      /*pages*/
+      .pages a,.pages b,.pages .pagesone{padding:0 7px;display:block;float:left;margin-right:3px;}
+      .pages a{color:#333;border:1px solid #ddd;background:#ffffff;}
+      .pages b,.pages a:hover{background:#db3228;;color:#ffffff;border:1px solid #db3228;text-decoration:none;}
+      .pages .pagesone{border:1px solid #ccc;background:#ffffff;font:11px Verdana;line-height:18px;}
+      .pages input{border:1px solid #cccccc;padding:0;font:10px Verdana;margin-top:-3px;*margin-top:0;}
+      /*5像素圆角*/
+      .y-bg2,.y-bg3,.y-bg4{background:#ffffff;}
+      .y-bg{margin:0 4px;border-top:1px solid #ffe6e8;}
+      .y-bg2{margin:0 2px;height:1px;border:2px solid #ffe6e8;border-top:0;border-bottom:0;overflow:hidden;}
+      .y-bg3{margin:0 1px;height:2px;border:1px solid #ffe6e8;border-top:0;border-bottom:0;overflow:hidden;}
+      .y-bg4{padding:0 10px;border:1px solid #ffe6e8;border-top:0;border-bottom:0;overflow:hidden;}
+      /*menu*/
+      .menu{position:absolute;background:#fff;border:1px solid #ffe6e8;}
+      .menu a{display:block;padding:4px 8px;}
+      /*下拉框*/
+      .menu-post{border:2px solid #ffe6e8;padding:1px;background:#f4c6ca;}
+      .menu-post .menu-b{border:1px solid #fff;background:#ffffff;}
+      .menu-b .h{border-bottom:1px solid #f4c6ca;}
+      .menu-half li{width:46%;float:left;}
+      .menu-half li a{float:left;}
+      .menu-post .menu-half li{padding:3px 0 3px 10px;}
+
+      /*弹出框 popout*/
+      .popoutContent{background:#ffffff;border:1px solid #f4c6ca;}
+      .bgcorner1,.bgcorner2,.bgcorner3,.bgcorner4,.pobg1,.pobg2,.pobg3,.pobg4{filter:Alpha(opacity=90);_filter:Alpha(opacity=90);opacity:.9;overflow:hidden; z-index:1005; line-height:0 }
+      .bgcorner1,.bgcorner2,.bgcorner3,.bgcorner4{width:5px;height:5px;background:#f4c6ca;}
+      .bgcorner1{background-position: 0 0 }
+      .bgcorner2{background-position: -5px 0 }
+      .bgcorner3{background-position: -5px -5px}
+      .bgcorner4{background-position:0 -5px}
+      .pobg1,.pobg2,.pobg3,.pobg4{ background:#f4c6ca;}
+      .pobg1{height:5px; }
+      .pobg2{width:5px;}
+      .pobg3{height:5px;}
+      .pobg4{width:5px;}
+      .popoutContent td{padding:.5em .6em;border-bottom:1px solid #ffe6e8;}
+
+      /*span color 数值自定义*/
+      .black,.black a{color:#333}
+      .s1{color:#008000;} /*绿*/
+      .s2{color:#984B98;} /*紫*/
+      .s3{color:#ff6600;} /*橙*/
+      .s4,.s4 a{color:#3366cc;} /*蓝*/
+      .s5 a{color:#db3228;}
+      .gray,.gray a{color:#888888;} /*次要字颜色*/
+      .gray2,.gray2 a{color:#bbbbbb;}
+      .red{color:#ff0000;}/*红*/
+
+      /*7.5,登录*/
+      .mr5{margin-right:5px;}
+      a.select_arrow{background:url(images/select_arrow.gif) no-repeat;display:block;text-indent:-2000em;height:15px;width:15px;margin:0 2px 0 0;overflow:hidden;}
+      a.select_arrow:hover{background:url(images/select_arrow_over.gif) no-repeat;}
+      .sel_name li{border-bottom:1px solid #ffe6e8;}
+
+      /*自定义css*/
+    </style><!--css-->
+    <!--[if IE]>
+    <style type="text/css">
+    .tr1 td.td1{border-top:0}
+    .t4{padding:0}
+    .t table{border-collapse:collapse;}
+    .t {padding:0}
+    </style>
+    <![endif]-->
+
+    <script type="text/javascript" language="JavaScript" src="js/pw_ajax.js"></script>
+    <script language="JavaScript">
+      var agt = navigator.userAgent.toLowerCase();
+      var is_ie = ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1));
+      var is_gecko= (navigator.product == "Gecko");
+      var imgpath = 'images';
+      var verifyhash = 'e0aec0b1';
+      var modeimg = 'mode/area/images';
+      var modeBase = '';
+      var winduid = '14';
+      var windid	= 'ntyangxd';
+      var groupid	= '8';
+      var gIsPost = true;
+      if (location.href.indexOf('/simple/') != -1) {
+        getObj('headbase').href = location.href.substr(0,location.href.indexOf('/simple/')+1);
+      } else if (location.href.indexOf('.html')!=-1) {
+        var base = location.href.replace(/^(http(s)?:\/\/(.*?)\/)[^\/]*\/[0-9]+\/[0-9]{4,6}\/[0-9]+\.html$/i,'$1');
+        if (base != location.href) {
+          getObj('headbase').href = base;
+        }
+      }
+    </script>
+  </head>
+  <body onkeydown="try{keyCodes(event);}catch(e){}">
+
+    <div class="topbar">
+      <div id="nav-operate">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr class="vt">
+            <td width="400">
+              <img src="images/face/none.gif" id="iconimg" width="16" height="16" align="absmiddle" /> <a href="u.php?action=show" id="td_userinfo_more" class="b">ntyangxd</a> <span class="gray">新手上路</span> <a href="profile.php" title="设置中心" target="_blank">设置</a><a id="td_msg" href="message.php" title="短消息" target="_blank" class="icon-meg">短消息</a><a href="login.php?action=quit&verify=be6e5b9c">退出</a><span id="td_skin" title="风格切换"><img src="images/pwicon/style.gif" style="cursor:pointer;" align="absmiddle" /></span>				</td>
+
+            <td>
+              <ul class="fr">
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="header">
+      <div id="head">
+
+        <table cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td><a href="http://localhost/" class="fl"><img src="images/wind_red/logo.png"/></a></td>
+            <td id="banner" align="right">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="nav-wrap">
+
+        <div id="nav">
+          <span class="nav-left fl"></span>
+          <div id="nav-s">
+            <a href="search.php?advanced=1" class="fr">高级</a>
+            <form name="sF" action="search.php?#submit" method="post" >
+              <input type="hidden" name="step" value="2" />
+              <input type="hidden" name="method" value="AND" />
+              <input type="hidden" name="sch_area" value="0" />
+
+              <input type="hidden" name="sch_area" value="0" />
+              <input type="hidden" name="f_fid" value="all" />
+              <input type="hidden" name="sch_time" value="all" />
+              <input class="s-input" type="text" id="keyword" name="keyword" />
+              <input class="s-btn" type="submit" name="submit" value="" />
+            </form>
+          </div>
+          <div id="nav-global">
+            <ul class="cc">
+
+              <li class="current"><a href="index.php?m=area" id="td_KEYarea">门户</a></li><li><a href="index.php?m=bbs" id="td_KEYbbs">论坛</a></li><li><a href="index.php?m=o" id="td_KEYo" target="_blank">圈子</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="index-info cc">
+      <table cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;">
+
+        <tr><td class="tal s5" width="430">
+            <span>
+              <a href="u.php?action=topic">我的主题</a>
+              <a href="u.php?action=post">我的回复</a>
+              <a href="u.php?action=favor">我的收藏</a>
+              <a href="mode.php?m=o&q=home">好友近况</a>
+              <a href="javascript:;" id="id_shortcut" onclick="read.open('menu_shortcut',this.id);">书签</a>
+
+              <a id="td_userinfomore" title="更多用户信息" href="javascript:;">更多<img src="images/wind_red/menu-down.png" align="absmiddle" /></a>
+            </span>
+          </td>
+          <td class="tar">
+            <a href="sort.php" id="td_KEYsort">统计排行</a>
+            <div id="menu_KEYsort" class="menu menu-post cc" style="display:none;">
+              <div class="menu-b" style="width:9em;">
+                <p><a href="sort.php" id="td_KEYsort_basic">基本信息</a></p>
+                <p><a href="sort.php?action=ipstate" id="td_KEYsort_ipstate">到访IP统计</a></p>
+
+                <p><a href="sort.php?action=team" id="td_KEYsort_team">管理团队</a></p>
+                <p><a href="sort.php?action=admin" id="td_KEYsort_admin">管理操作</a></p>
+                <p><a href="sort.php?action=online" id="td_KEYsort_online">在线会员</a></p>
+                <p><a href="sort.php?action=member" id="td_KEYsort_member">会员排行</a></p>
+                <p><a href="sort.php?action=forum" id="td_KEYsort_forum">版块排行</a></p>
+                <p><a href="sort.php?action=article" id="td_KEYsort_article">帖子排行</a></p>
+
+                <p><a href="job.php?action=taglist" id="td_KEYsort_taglist">标签排行</a></p>
+              </div>
+            </div>
+            <a href="hack.php?H_name=bank" id="td_KEYbank">银行</a>
+            <a href="javascript:;" id="td_KEYhack">社区服务</a>
+            <div id="menu_KEYhack" class="menu menu-post cc" style="display:none;">
+              <div class="menu-b" style="width:9em;">
+
+                <p><a href="hack.php?H_name=toolcenter" id="td_KEYtoolcenter">道具中心</a></p>
+              </div>
+            </div>
+            <a href="member.php" id="td_KEYmember">会员列表</a>
+            <a href="search.php?sch_time=all&orderway=lastpost&asc=desc&newatc=1" id="td_KEYlastpost">最新帖子</a>
+            <a href="search.php?digest=1" id="td_KEYdigest">精华区</a>
+            <a href="search.php" id="td_KEYsearch">搜索</a>
+
+            <a href="faq.php" id="td_KEYfaq">帮助</a>
+          </td></tr></table></div>
+    <div id="menu_userinfomore" class="menu-post cc" style="display:none;">
+      <div class="menu-b" style="width:26.5em;">
+        <ul class="menu-half cc">
+          <li>帖子:0</li>
+          <li>今日: 0</li>
+          <li>威望: <span class="s2">0 点</span></li>
+
+          <li>铜币: <span class="s3">0 枚</span></li>
+          <li>贡献值: <span class="s3">0 点</span></li>
+
+          <li>最后登录: <span class="f10">2009-09-24</span></li>
+          <li>登录IP: <span class="f10">Unknown</span></li>
+
+        </ul>
+      </div>
+    </div>
+    <div id="menu_skin" class="menu menu-post cc" style="display:none;">
+      <div class="menu-b" style="width:9em;">
+        <a href="#" onclick="window.location=('/index.php?cateid=5&amp;skinco=wind');return false;"><font color=#3366cc>■wind</font></a>
+        <a href="#" onclick="window.location=('/index.php?cateid=5&amp;skinco=wind_green');return false;"><font color=green>■green</font></a>
+        <a href="#" onclick="window.location=('/index.php?cateid=5&amp;skinco=wind_orange');return false;"><font color=orange>■orange</font></a>
+
+        <a href="#" onclick="window.location=('/index.php?cateid=5&amp;skinco=wind_purple');return false;"><font color=purple>■purple</font></a>
+        <a href="#" onclick="window.location=('/index.php?cateid=5&amp;skinco=wind_red');return false;"><font color=red>■red</font></a>
+      </div>
+    </div>
+    <div id="menu_shortcut" class="menu menu-post cc" style="display:none;">
+      <div class="menu-b" style="width:9em;width:150px;">
+        <a href="thread.php?fid=8">商家服务</a>
+        <a href="thread.php?fid=40">婚庆交友</a>
+
+        <a href="thread.php?fid=31">摩托车等</a>
+        <a href="thread.php?fid=22">房产家装</a>
+        <a href="thread.php?fid=13">招聘普工</a>
+        <a href="thread.php?fid=45">测试增加新分类</a>
+      </div>
+    </div>
+    <div class="main-wrap">
+      <div id="main">
+
+        <style type="text/css">
+          .t table tr.tr2 td.f{width:22%;}
+          .t table tr.tr2 td.e{width:10em;}
+        </style>
+
+        <div class="forum-info cc gray">
+          <div class="fr">主题:34 | 帖子:35 | 会员:2 | 新会员:<span class="black"><a href="u.php?action=show&username=ntyangxd" target="_blank">ntyangxd</a></span>&nbsp;<a href="rss.php" target="_blank" title="RSS订阅本版面最新帖子"><img src="images/wind_red/rss.png" align="absmiddle" /></a></div>
+	今日:0 | 昨日:1 |
+	最高日:1 | <a href="job.php?action=sign">标记已读</a>
+        </div>
+
+        <div class="noticebg">
+          <div id="notice">
+            <div id="notice0" style="width:98%;height:18px;line-height:18px;overflow-y:hidden;">
+
+              <ul>
+                <li><a href="http://www.phpwind.net/read-htm-tid-701037.html">PHPWind.APP（Beta）--您的增值应用后台</a> <span class="f9 gray">09-07-13</span></li>
+                <li><a href="http://www.phpwind.com/easysite/index.php">10分钟建站指南</a> <span class="f9 gray">09-07-13</span></li>
+                <li><a href="http://www.phpwind.com/phpwind73/">PHPWind 7 终极版（7.3.2）发布！</a> <span class="f9 gray">09-07-13</span></li>
+
+              </ul>
+            </div><div style="height: 36px;overflow-y: hidden;"></div>
+          </div>
+        </div>
+        <script language="javascript">
+          function bbsNoticePlay() {
+            if (bbsNoticeC.scrollHeight < 36) {
+              bbsNoticeO = setTimeout('bbsNoticePlay()',4000);
+              bbsNoticeF.scrollTop = bbsNoticeC.scrollTop = 0;
+              bbsNoticeH = true;
+              return ;
+            }
+            if (bbsNoticeH) {
+              bbsNoticeF.scrollTop = 36;
+              if (bbsNoticeC.scrollHeight-18 <= bbsNoticeC.scrollTop) {
+                bbsNoticeC.scrollTop = 0;
+              } else {
+                bbsNoticeC.scrollTop += 18;
+              }
+              bbsNoticeH = false;
+              bbsNoticeO = setTimeout('bbsNoticePlay()',500);
+            } else {
+              bbsNoticeF.scrollTop = 0;
+              bbsNoticeH = true;
+              bbsNoticeO = setTimeout('bbsNoticePlay()',4000);
+            }
+          }
+          var bbsNoticeH = true;
+          var bbsNoticeF = getObj('notice');
+          var bbsNoticeC = getObj('notice0');
+          bbsNoticeF.scrollTop = bbsNoticeC.scrollTop = 0;
+          bbsNoticeF.onmouseover = function(){if(bbsNoticeO && bbsNoticeH){clearTimeout(bbsNoticeO);bbsNoticeO=0;}};
+          bbsNoticeF.onmouseout  = function(){if(!bbsNoticeO){bbsNoticeO = setTimeout('bbsNoticePlay()',4000);bbsNoticeH=true;}};
+          var bbsNoticeO = setTimeout('bbsNoticePlay()',4000);
+        </script>
+
+        <div class="t">
+          <table width="100%" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+              <td class="h"><b>热门标签</b></td>
+
+            </tr>
+            <tr class="tr3">
+              <td class="f_one black" style="line-height:180%;">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="contentc"></div>
+        <div id="content">
+          <div class="contentwrap z">
+            <div class="t z" id="t_5">
+
+              <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <th class="h" colspan="6"><a class="closeicon fr" style="cursor:pointer;" onclick="return IndexDeploy('5',0)"><img id="img_5" src="images/wind_red/index/cate_fold.gif" /></a>
+                    <h2>&raquo; <a href="index.php?cateid=5" class="cfont">商业信息</a></h2>
+                  </th>
+                </tr>
+                <tbody id="cate_5" style="display:;">
+                  <tr class="tr2">
+
+                    <td width="*" colspan="2" class="tac">论坛</td>
+                    <td class="tal y-style e">主题 / 文章</td>
+                    <td class="tal y-style f">最后发表</td>
+                  </tr>
+                  <tr class="tr3 f_one" id="fid_9">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=9" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+                    <th>					<h3 class="b"><a href="thread.php?fid=9" id="fn_9">供应商品</a></h3>
+
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+                      </div>
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">5</span> / <span class="f10">5</span><br /></td>
+                    <th>
+                      <a href="read.php?tid=153&page=e#a" class="a2">新昌亚克力胸牌滴 ..</a><br />
+
+                      <span class="gray">admin</span><br />
+                      <span class="f9 gray">2009-07-14 11:48</span>
+                      &nbsp;</th></tr>
+                  <tr class="tr3 f_one" id="fid_10">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=10" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+                    <th>					<h3 class="b"><a href="thread.php?fid=10" id="fn_10">招商合作</a></h3>
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+
+                      </div>
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">6</span> / <span class="f10">6</span><br /></td>
+                    <th>
+                      <a href="read.php?tid=156&page=e#a" class="a2">桑乐太阳能招商</a><br />
+                      <span class="gray">admin</span><br />
+
+                      <span class="f9 gray">2009-07-14 11:50</span>
+                      &nbsp;</th></tr>
+                  <tr class="tr3 f_one" id="fid_11">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=11" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+                    <th>					<h3 class="b"><a href="thread.php?fid=11" id="fn_11">公告资讯</a></h3>
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+                      </div>
+
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">5</span> / <span class="f10">5</span><br /></td>
+                    <th>
+                      <a href="read.php?tid=159&page=e#a" class="a2">7月11日车保姆汽车 ..</a><br />
+                      <span class="gray">admin</span><br />
+                      <span class="f9 gray">2009-07-14 11:52</span>
+
+                      &nbsp;</th></tr>
+                  <tr class="tr3 f_one" id="fid_6">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=6" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+                    <th>					<h3 class="b"><a href="thread.php?fid=6" id="fn_6">旺铺转让</a></h3>
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+                      </div>
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">5</span> / <span class="f10">5</span><br /></td>
+
+                    <th>
+                      <a href="read.php?tid=144&page=e#a" class="a2">供应丝带绣抱枕</a><br />
+                      <span class="gray">admin</span><br />
+                      <span class="f9 gray">2009-07-14 11:38</span>
+                      &nbsp;</th></tr>
+                  <tr class="tr3 f_one" id="fid_7">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=7" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+
+                    <th>					<h3 class="b"><a href="thread.php?fid=7" id="fn_7">优惠打折</a></h3>
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+                      </div>
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">6</span> / <span class="f10">7</span><br /></td>
+                    <th>
+
+                      <a href="read.php?tid=3&page=e#a" class="a2">Re:为赚人气便宜卖 ..</a><br />
+                      <span class="gray">admin</span><br />
+                      <span class="f9 gray">2009-08-12 12:05</span>
+                      &nbsp;</th></tr>
+                  <tr class="tr3 f_one" id="fid_8">
+                    <td class="icon tac" width="45"><a href="thread.php?fid=8" target="_blank"><img src="images/wind_red/old.gif" /></a></td>
+                    <th>					<h3 class="b"><a href="thread.php?fid=8" id="fn_8">商家服务</a></h3>
+
+                      <div class="gray">版主:
+                        <span class="forumslink"></span>
+                      </div>
+                    </th>
+                    <td class="tal y-style f10 e"><span class="s3">6</span> / <span class="f10">6</span><br /></td>
+                    <th>
+                      <a href="read.php?tid=150&page=e#a" class="a2">新昌斜屋顶窗请找 ..</a><br />
+
+                      <span class="gray">admin</span><br />
+                      <span class="f9 gray">2009-07-14 11:46</span>
+                      &nbsp;</th></tr>
+                  <tr><td colspan="5" style="height:8px;"></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div></div>
+        <div class="c"></div>
+        <script language="JavaScript" src="js/Deploy.js"></script>
+
+        <div class="t">
+          <table cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+              <th colspan="2" class="h"><a class="closeicon fr" style="cursor:pointer;" onclick="return IndexDeploy('info',0)"><img id="img_info" src="images/wind_red/index/cate_fold.gif" /></a><b>论坛相关</b></th>
+            </tr>
+            <tbody id="cate_info" style="display:;">
+              <tr class="tr2">
+                <td colspan="2">
+                  <a id="selfshare" style="cursor:pointer;float:right" onclick="sendmsg('pw_ajax.php','action=sharelink',this.id)">自助友情链接</a>
+
+                  &raquo; 友情链接 </td>
+              </tr>
+              <tr class="tr3">
+                <td class="f_one tac" width="4%"><img src="images/wind_red/index/share.gif" /></td>
+                <th class="f_one black" width="96%" style="word-break: keep-all;border-right:none;"><a href="http://www.phpwind.net" target="_blank"><img src="logo.gif" alt="PHPwind官方论坛" width="88" height="31"></a></th>
+              </tr>
+              <tr class="tr2">
+                <td colspan="2">&raquo; 在线用户<a name="online"></a> -  共 1 人在线,1 位会员,0 位访客,最多 1 人发生在 2009-09-22 08:36 </td>
+
+              </tr>
+              <tr class="tr3">
+                <td class="f_one tac" style="padding:0;border-bottom:0px;" width="4%"><img src="images/wind_red/index/online.gif" /></td>
+                <td class="f_one tal" style="padding:15px 20px;border-bottom:0px;border-right:none;">
+                  <img src="images/wind_red/group/3.gif" align="absmiddle" /> 管理员
+                  <img src="images/wind_red/group/4.gif" align="absmiddle" /> 总版主
+                  <img src="images/wind_red/group/5.gif" align="absmiddle" /> 论坛版主
+                  <img src="images/wind_red/group/16.gif" align="absmiddle" /> 荣誉会员
+                  <img src="images/wind_red/group/6.gif" align="absmiddle" /> 普通会员
+                  <a name="online"></a> [<a href="javascript:;" onclick="window.location='http://localhost/index.php?m=bbs&online=yes#online';">打开在线列表</a>]
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div></div><!--.main-wrap,#main End-->
+    <div class="footer-wrap">
+      <div class="c"></div>
+      <div id="bottom"></div>
+      <div class="c"></div>
+      <div id="footer">
+        <div id="mode-footer" class="mt">
+          <div class="bottom cc tac">
+            <ul>
+
+              <li><a href="job.php?action=erasecookie&verify=be6e5b9c">清除Cookies</a></li>
+              <li><a href="http://localhost/sendemail.php?username=admin">联系我们</a></li>
+              <li><a href="simple/">无图版</a></li>
+              <li><a href="wap/index.php">手机浏览</a></li>
+              <li><a href="javascript:scroll(0,0)">返回顶部</a></li>
+            </ul>
+
+          </div>
+          <center class="f9 gray"><span id="windspend">Total 0.102592(s) query 3, Time now is:09-24 16:26, Gzip enabled </span><br />
+	Powered by <a href="http://www.phpwind.net/" target="_blank"><b>PHPWind</b></a> <a href="http://www.phpwind.net/" target="_blank"><b style="color:#FF9900">v7.5RC</b></a> <a href="http://www.phpwind.com/certificate.php?host=localhost"><b>Certificate</b></a> Code &copy; 2003-09 <a href="http://www.phpwind.com/" target="_blank"><b>PHPWind.com</b></a> Corporation <span id="stats"></span>
+
+          </center></div></div></div>
+    <script language="JavaScript" src="js/global.js"></script>
+  </body></html>
+<script language="JavaScript">
+  var openmenu = {'td_u' : 'menu_u','td_sort' : 'menu_sort','td_KEYsort' : 'menu_KEYsort','td_KEYapp' : 'menu_KEYapp','td_KEYhack' : 'menu_KEYhack','td_skin' : 'menu_skin','td_userinfomore' : 'menu_userinfomore'};
+  read.InitMenu();
+  WINDOW_LOADED=1;
+
+</script>
+<script language="JavaScript" src="http://init.phpwind.net/init.php?sitehash=10BQIHDwBWAQFTBlhWVwoDUwIMBQYGBFEEDV0HXAYBVVA&v=7.5RC&c=0"></script>

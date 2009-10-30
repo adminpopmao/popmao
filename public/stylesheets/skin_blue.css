@@ -1,0 +1,218 @@
+/*-------------------
+*Fileanme:           skin_blue.css
+*Description:        sns风格css[默认]
+*Version:            v1.0(2009-09-2 22:30)
+*Website:            http://19lou.com
+*Author:             fuxiaoyun
+*Update:             2009-10-22 10:00
+*Last Edit:          fuxiaoyun
+-------------------*/
+
+body {color:#333;background:#EDF8FC url(/images/bgbody_skin.jpg) no-repeat 50% 0;}
+
+/* 文字 */
+	.c_normal, .c_normal a {color:#333;}
+	.c_auxi {color:#666;} /* 辅助文字 */
+	.c_weak {color:#999;}/* 弱化文字 */
+	a:link, a:visited {color:#0857B4;}/* 连接文字 */
+	.alert, .alert a, .alert a:visited {color:#FC6D02;}
+	.accent, msg_tips {color:#fb3a3a;}
+
+/* 按钮 */
+.sumbit span button {color:#FFF;}
+	.btn_option span button {color:#666;}
+/* 导航 */
+.nav a, .nav a:visited, .quicklink a, .quicklink a:visited {color:#627509;} /* 导航连接颜色 */
+	.header .showdropmenu span {background:#FFF;} /* 导航下拉菜单半透明背景色 */
+
+.container {background:#F7FEE5;} /* 家首页右边栏背景 */
+.snshome {background:#F7FEE5;} /*  家门口右边栏背景 */
+.inside {background:#F7FEE5;} /* 内页右边栏背景 */
+	.snsbox {border-right-color:#E9F4CF;background:#F7FEE5;} /* 家首页左边栏背景右边线 */
+	.friendhome, .newtopic_index dt span {background:#FFF} /* 家门口左边栏背景色、最近帖子时间背景色 与{.snsbox .main}背景色一致 */
+		.snsbox .main {background:#FFF;border-left-color:#E9F4CF} /* 家门口中栏背景色 */
+			.main .box h4, .dynamic_index h4 {border-bottom-color:#DBE9F6;} /* 家首页、家门口中间标题下边框 */
+					.friendonline {border-top-color:#CEE2F5} /* 家首页我的好友边上边框 */
+						.friendonline li img {border-color:#DBDBDB;} /* 家首页我的好友图片边框 */
+		.slide h3, .invite p, .index_task, .index_task dl {border-color:#E9F4CF;} /*家首页、家门口右边栏间隔边框 */
+	.friendhome_nav li {border-color:#C6DCF1} /* 家门口左边栏应用下边框 */
+
+/* dropmenu */
+.dropmenu {border-color:#DBE9F6;background:#FFF;}
+	.dropmenu .dropmenu_bg {background:#FFF;}
+	.header .dropmenu a:hover {background:#D8E28C;}
+	.sms_group .dropmenu a:hover, .plotlist .dropmenu a:hover {color:#FFF;background:#7AB4F8;}
+
+/* 动态菜单 */
+	.dynamic_confall ul, .dynamic_conf ul {border-color:#7FB7F8;overflow:hidden;}
+		.dynamic_confall li, .dynamic_conf li {border-color:#C8E1FE;}
+			.dynamic_confall li a, .dynamic_conf li a  {background-color:#F0F7FF;background-image:url(/images/skin.gif);background-repeat:no-repeat}
+			.dynamic_confall li a:hover, .dynamic_conf li a:hover  {border-color:#EAF3FF;color:#FFF;background-color:#7AB4F8;}
+	
+	.dy_ulist{border-bottom-color:#DBE9F6;}
+		.dylist {border-bottom-color:#DBE9F6;}
+	.msg_msgboard_tother {border-color:#A1B736;}
+
+/* tab */
+.tab_index .current a {color:#333333;}
+
+/* 留言板 */
+	/* 中间横线 */
+	.msg_tother_uface cite {border-color:#A1B736;}
+	/* 框颜色|背景 */
+	.msg_list, .msg_u_info {border-color:#A1B736;background:#ECF2CF;}
+	/* 间隔线颜色 */
+	.msg_list .msg_list_loading, .msg_list .msg_list_showmore, .msg_list .replybox, .msg_list dl  {border-bottom-color:#FFFFFF;}
+
+/* 内页右侧背景 */
+.right {background:#FFF;border-color:#E9F4CF}
+
+/* 分页 */
+.pages span {border-color:#DDDDDD;color:#666}
+.pages a {border-color:#D0E4F7;background:#F0FCFF;}
+
+/* 背景 */
+.imskin, .sumbit, .sumbit span, .btn_option, .btn_option span, .btn_ing{background-image:url(/images/skin.gif);background-repeat:no-repeat}
+
+/* 重复背景 */
+.bg_repeat {background-image:url(/images/bg_repeat1.png);background-position:repeat-x;}
+
+/* 图标 */
+.icon, .icon_member {background-image:url(/images/icon1.gif);background-repeat:no-repeat;}
+	
+/* 选择发送对象|邀请 */
+.sms_main_uface, .cms_choosed_this a, .cms_choosed_this span, .sms_main dl, .sms_main_uface span, .invite_listhead .invite_current, .invite_listhead .invite_current span, .giftpacklist .gpchoosed {background-image:url(/images/bg_choose_user.png);background-repeat:no-repeat;}
+	
+/* 表格头 */
+.bg_thead {background:#F0FCFF;}
+	
+/* 表格间歇 */
+.cam_blue {background:#F5F8FF;}
+	
+	/* 留言载入 */
+.msg_list .msg_list_loading {background-image:url(/images/loading.gif);background-repeat:no-repeat;}
+	
+/* 邀请好友按钮 */
+.btn_invite:link, .btn_invite:visited {color:#333;}
+.btn_invite, .btn_invite span {background-image:url(/images/bg_friend_invite.gif);}
+
+/* 单项好友 */
+.import_intro p{border-color:#E9CF9E;color:#CE6B18}
+
+/* 首页禁止访问 */
+.home_forbid {background-image:url(/images/bg_alarm.gif);background-repeat:no-repeat;}
+
+/* 批量上传 */
+.not_phototype span {background:url(/images/batch_upload_notype.png) no-repeat 0 0;}
+	
+	/* 广播 */
+		/* 转发 */
+		.transmit_cont ul, .transmit_cont li {background-image:url(/images/bg_broad_transmit.gif);background-repeat:no-repeat;}
+		/* 广播 */
+		.broad_list .dy_main, .broadlist_content, .broad_list .board_option {background-image:url(/images/bg_broad_reply.gif);}
+		/* textarea默认值 */
+		.tdv {background:url(/images/bg_broad_tdv.gif) no-repeat 0 0;}
+
+/* 我的好友右侧分组 */
+.friendgroup {background:#F0FCFF}
+		.friendgroup li span a, .friendgroup li span a:visited {color:#666;}
+	.friendgroup .current {background:#FFF;}
+
+/* 好友搜索背景色 */
+.sns_search .sm span {background:#FFF;}
+
+/* 礼物 */
+	.gift {background:url(/images/bg_gift_top.gif) repeat-x 0 0;}
+		.gift_option a, .gift_option a:visited {color:#FFF;}
+		.giftslide, .giftslide h3 {background-image:url(/images/gift_title.gif);background-repeat:no-repeat;}
+			.giftslide dl {border-color:#FEC981;background-color:#FFF7EB;}
+			.gift_largess, .gift_solicit, .gift_forbidden {background-image:url(/images/gift_option.gif);background-repeat:no-repeat;}
+			.dialogbox_viewgift dd {background:#F6F6F6;}
+		
+		/* 我收到的礼物*/
+		.mygift {background-image:url(/images/bg_mygift.png);background-repeat:no-repeat;}
+			.mygift .mygift_gifttext {background:url(/images/bg_mygift_text.gif) repeat 0 0;}
+		
+		/* 我的送礼清单*/
+		.mygiftlist {background-image:url(/images/bg_mygiftlist.jpg);background-repeat:no-repeat;}
+			.mygiftlist h5 {background:url(/images/bg_mygiftlist.jpg) repeat-y 0 0;}
+			.mygiftlist ul, .mygiftlist div {background-image:url(/images/bg_mygiftlistr.jpg);background-repeat: repeat-y;}
+				.mygiftlist li {background-image:url(/images/bg_mygift_text.gif);background-repeat: repeat-x;}
+		
+		/* 礼物柜*/
+		.allgift h5 {background-image:url(/images/bg_allgiftr.gif);background-repeat:no-repeat;}
+			.allgift h5 span {background:url(/images/bg_allgiftrtop.jpg) no-repeat 0 0;}
+		.allgift ul {background-image:url(/images/bg_allgiftr.gif);background-repeat:no-repeat;}
+		
+		/* 礼物消费金币提示*/
+		.gift .gift_goldtips, .gift_nomoney {border-color:#EEAC67;}
+		
+		/* 礼物递送 */
+		.gift_form .gift_postby {border-color:#EDA85F;}
+		
+		/* 礼物包装列表 */
+		.giftpacklist, .giftpacklist dt {background:#FFFFFF;}
+
+/* 深边框 */
+.border_deep, .border_deep td, .border_deep th {border-color:#D0E4F7}
+	
+/* 淡边框 */
+.border_tint {border-color:#f1f9ff;}
+
+/* 选择好友 */
+.sms_chooseuser {border-color:#C3D0E3;background:#F0FCFF;}
+	.sms_group, .sms_main {border-color:#C3D0E3;background:#FFFFFF;}
+	.sms_group dt {border-color:#FFF;background:#FFF;}
+	.sms_group dt.mover {border-color:#D0E4F7}
+	
+/* msn邀请 */
+.invite_msnlist {border-color:#C3D0E3;background:#F0FCFF;}
+	.invite_listmain {border-color:#C3D0E3;background:#FFFFFF;}
+
+/* 文本框 */
+.txt input, .atxt textarea {border-color:#7C9EBA;font-size:12px;color:#666;}
+
+/* 首页小广播文本框文本框 */
+.broard_show .atxt textarea, .broard_show .atxt div {border-color:#C8DDF2;color:#999;}
+
+/* 照片列表 */
+.photo_list_simple img, .log_newphoto img, .new_photo img, .dynamic_updataface img {border-color:#E0E0E0;}
+/* 照片最终页列表 */
+.view_photo_main img, .view_photo_small, .view_photo_small li {border-color:#E5E5E5}
+/* 照片最终页翻页 */
+.view_photo_slide strong {border-color:#D1D1D1;}
+/* 照片最终页当前照片 */
+.view_photo_small li.current, .log_list dt p {border-color:#FC6D02;}
+/* 批量上传照片列表下边框|预览礼物 */
+.upload_table .uploadr_scroll .clearfix, .dialogbox_viewgift .gift_touser {border-color:#dddddd}
+
+/* 表情 */
+	.reply_face {border-color:#1F6EA9;}
+	.reply_face li {border-color:#D8E0ED;}
+	.reply_face li span {border-color:#B5CE85;background:#FFF;}
+
+/* 话题状态 */
+	span.processed {border-color:#8DAA1E;color:#8DAA1E;}/* 已解决 */
+	span.ing {border-color:#FC6E02;color:#FC6E02;}/* 解决中 */
+	span.expire {border-color:#FC3A3A;color:#FC3A3A;}/* 已过期 */
+	span.backout {border-color:#999999;color:#999999;}/* 已撤销 */
+
+/* 提示信息 */
+	.msg_tips {border-color:#ffabab;background:#ffeaea;}
+	.msg_success {border-color:#edddab;background-color:#fffce9;color:#c0880f;}
+	.msg_allwaystips {border-color:#EDA85F;background:#FFF7DD;}
+
+/* 消息分类 */
+	.mass {border-color:#8BAB1C;color:#FB6D01;} /* 群发 */
+	.sms_system {border-color:#8BAB1C;color:#8BAB1C;} /* 系统消息|生日提醒 */
+
+/* bottomInfo */
+#bottomInfo a, #bottomInfo a:visited {color:#999}
+
+/* 任务 */
+	.tasklist_ing h5, .task_viewover a, .task_viewover a:visited {color:#AB4000}
+		.btn_task a, .btn_task a:visited, .btn_task a:hover {color:#FFF;}
+		.btn_getreward a, .btn_getreward a:visited, .btn_getreward a:hover {color:#F7FEE5;}
+		.window_taskmain h4 {border-color:#DADADA;}
+	/* 首页 */
+	.index_task dt {border-color:#DADADA;background:#FFF;}

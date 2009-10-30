@@ -1,0 +1,24 @@
+.main
+  .info
+    .cp_face#cp_face
+      %h4.border_deep 当前头像
+      .oldface.uface_full
+        %span
+        %div
+          - if current_user.photo_id == 0
+            = image_tag "space_noface.gif", :size=>'120x120'
+          - else
+            = image_tag formatted_photo_path(current_user.photo_id, :jpg)
+    .upload_face#upload_face
+      %h4.border_deep 上传头像
+      %em.c_weak 请选择新的照片文件，文件需小于3MB
+
+      - form_for :photo, :url=>upload_photo_jia_account_path, :html=>{:id=>'upload_photo', :multipart=>true} do |f|
+        %p
+          %br 
+          %b 上传图片
+          = f.file_field :image_file
+          %strong.c_weak 请确认上传的是你自己的照片。
+          %p.c_weak 上传色情反动照片将导致你的帐户被删除
+          = f.submit '上传'
+  .imskin.c_bottom

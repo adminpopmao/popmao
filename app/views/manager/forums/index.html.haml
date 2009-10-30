@@ -1,0 +1,29 @@
+#main
+  #app_header.clearfix
+    %strong.profile= link_to '版块设置', '/'
+  %div
+    %ul#main_nav
+      %li.activetab= link_to '列表', '#'
+      %li= link_to '分类', new_manager_forum_path
+      %li= link_to '版块', new_forum_manager_forums_path
+    %div{:style=>'clear:both;'}
+      %h1 版块列表
+      %table
+        %tr
+          %th id
+          %th 名称
+          %th 位置
+          %th 关键字
+          %th 声明
+          %th 父结点
+        - @forums.each do |forum|
+          %tr
+            %td=h forum.id
+            %td=h forum.name
+            %td=h forum.position
+            %td=h forum.all_keys
+            %td=h forum.description
+            %td=h forum.parent_id
+            %td
+              = link_to '编辑', edit_manager_forum_path(forum)
+              = link_to '删除', manager_forum_path(forum), :confirm=>'删除论坛将会删除所有其下面的帖子，跟贴等，是否要删除？', :method=>:delete

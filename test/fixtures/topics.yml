@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+topic_one:
+  id: 1
+  forum_id: 2
+  user_id: 1
+  subject: 这是我的第一个帖子
+  content: 如题
+
+topic_two:
+  id: 2
+  forum_id: 2
+  user_id: 1
+  subject: 这是我的第二个帖子
+  content: 如题

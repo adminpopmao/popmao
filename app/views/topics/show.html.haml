@@ -1,0 +1,22 @@
+.layout
+  = render :partial=>'show_nav'   # 显示当前所在位置
+  %form{:name=>"modactions", :method=>"post"}
+    = render :partial=>'show_button'   # 显示回复等按钮以及分页信息
+
+    = render :partial=>'show_title'    # 显示标题
+    <!-- 帖子列表开始 -->
+    <!-- 帖子列表[楼主] -->
+    .postlist.firstfloor
+      = render :partial=>'show_user_info', :object=>@topic.user   # 显示用户信息
+      = render :partial=>'show_topic_content', :object=>@topic   # 显示主题内容
+
+    <!-- 帖子列表[普通楼层] -->
+    - @posts.each do |p|
+      .postlist
+        <!-- 用户信息 gwang-->
+        = render :partial=>'show_user_info', :object=>p.user   # 显示回贴人的信息
+        = render :partial=>'show_post_content', :object=>p  # 显示回贴内容
+
+    = render :partial =>'show_button'   # 显示回复等按钮以及分页信息
+
+  = render :partial=>'show_quick_reply' if current_user # 显示快速回复

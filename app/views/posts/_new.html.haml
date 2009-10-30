@@ -1,0 +1,49 @@
+- form_for :post, :url=>forum_topic_posts_path(@forum,@topic) do |f|
+  .t{:style=>'margin-top:5px;'}
+    %table{:width=>'100%',:cellspacing=>'0'}
+      %tbody
+        %tr{:style=>'height: 23px; line-height: 23px; color: rgb(102, 102, 102);'}
+          %td.h{:colspan=>'2'}
+            %b 快速回复
+          %td.h{:style=>'text-align:right;'}
+            = link_to '顶端', 'javascript:scroll(0,0)'
+        %tr.tr2
+          %td{:style=>'border-bottom:0pt none;',:colspan=>'100'}
+        %tr
+          %td.f_one{:width=>'20%',:valign=>'top',:style=>'padding:7px;'}
+            %b 内容
+            %br HTML 代码不可用
+          %td.f_one{:width=>'60%', :style=>'padding:7px;'}
+            %div.cc
+              %div.blockquote.fl{:style=>'margin:6px 0pt 0pt;width:auto;'}
+                = '请填写回复的内容'
+              -# 显示错误信息
+              = render :partial => 'show_error_message' if @post.errors.size > 0
+
+            %div{:style=>'padding:0.3em 0pt'}
+            = f.tinymce :content, :rows=>'8', :style=>'width:96%;'
+            .fr.gray#atc_content_warn{:style=>'padding:0px 15px'} 限20000字
+            %div{:style=>'margin:5px 0pt;'}
+              .cc{:style=>'padding:4px 15px 4px 0pt;float:right;'}
+                = link_to '字数检查', '#'
+                = link_to '恢复数据', '#'
+                = link_to '存为草稿', '#'
+                = link_to '草稿箱',   '#'
+              = submit_tag '回复', :class=>'btn fl b', :style=>'padding: 0pt 1em; width: 70px; height: 25px;'
+              %div{:style=>'padding:4px 10px 0pt 0pt;float:left;color:red;'} 按ctrl+Enter直接提交
+          %td.f_one{:width=>'20%'}
+            %div{:style=>'padding: 3px; text-align: center; width: 200px;'}
+              %fieldset#smiliebox{:style=>'border:1px solid rgb(255,230,232);'}
+                %legend 表情
+                #menu_show
+                  = image_tag 'post/smile/default/1.gif'
+                  = image_tag 'post/smile/default/2.gif'
+                  = image_tag 'post/smile/default/3.gif'
+                  = image_tag 'post/smile/default/4.gif'
+                  = image_tag 'post/smile/default/5.gif'
+                  = image_tag 'post/smile/default/6.gif'
+                  = image_tag 'post/smile/default/7.gif'
+                  = image_tag 'post/smile/default/8.gif'
+                  = image_tag 'post/smile/default/9.gif'
+
+

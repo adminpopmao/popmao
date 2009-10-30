@@ -1,0 +1,67 @@
+#content
+  /
+    #clew
+      %font{:color=>"red"}
+        你输入的用户名或者密码有错误
+      .finger
+  %table{:width=>"778", :cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
+    %tbody
+      %tr
+        %td
+          .textR{:align=>"left", :style=>"border-bottom: 1px solid rgb(238, 238, 238);"}
+            江海社区通行证登录
+      %tr
+        %td
+          %table{:width=>"778", :cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
+            %tbody
+              %tr
+                %td{:width=>"300", :valign=>"top"}
+                  %table{:width=>"300", :cellspacing=>"0", :cellpadding=>"0", :border=>"0"}
+                    %tbody
+                      %tr
+                        %td
+                          %div{:align=>"left"}
+                            = image_tag "landing.gif"
+                      %tr
+                        %td
+                          %table{:width=>"280", :cellspacing=>"3", :cellpadding=>"0", :border=>"0", :style=>"border-bottom: 1px solid rgb(238, 238, 238);"}
+                            - form_tag session_path do
+                              %tbody
+                                %tr
+                                  %td{:width=>"80"}
+                                    %div{:align=>"right"}
+                                      用户名：
+                                  %td
+                                    %div{:align=>"left"}
+                                      = text_field_tag 'login', nil, :style=>"border: 1px solid rgb(196, 199, 200); width: 160px; height: 18px; line-height: 16px;"
+                                %tr
+                                  %td{:width=>"80"}
+                                    %div{:align=>"right"}
+                                      密 码：
+                                  %td
+                                    %div{:align=>"left"}
+                                      = password_field_tag 'password', nil, :style=>"border: 1px solid rgb(196, 199, 200); width: 160px; height: 18px; line-height: 16px;"
+                                %tr
+                                  %td{:width=>"80"}
+                                  %td
+                                    %div{:align=>"left"}
+                                      %input{:type=>"checkbox", :checked=>"", :value=>"1", :name=>"next"}
+                                      下次自动登录
+                                %tr
+                                  %td{:width=>"80", :height=>"40"}
+                                  %td{:height=>"40"}
+                                    %div{:align=>"left"}
+                                      = submit_tag '登录', :class=>'bu_a'
+                                      = link_to '找回密码', '#'
+                      %tr
+                        %td{:height=>"40"}
+                          还不是江海社区的用户？
+                          = link_to '赶紧注册去', :signup, :class=>"bu_c"
+                %td
+                  %div{:align=>"center"}
+                    = image_tag 'geli.gif'
+                %td{:width=>"410", :height=>"40"}
+                  %div{:align=>"center"}
+                    = image_tag '19lou.gif'
+      %tr
+        %td

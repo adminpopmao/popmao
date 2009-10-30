@@ -1,0 +1,17 @@
+.nav_simple
+  .layout.nav_simplebox
+    %h3
+      = link_to '江海社区', :root
+    #navuinfo.nav_simplelogin
+      - form_tag session_path do
+        = text_field_tag 'login', '用户名', :class=>'inp_text', :onclick=>"this.value = (this.value == '用户名') ? '': this.value"
+        = password_field_tag 'password', nil, :class=>"inp_text"
+        = submit_tag "登录", :class=>"inp_sm"
+        %span
+          /
+          = link_to '立即注册', '#', :target=>"_blank"
+      = render :partial=>'layouts/quickmenu' if current_user
+      .nav_quicklick
+        %div
+          %span
+            我的快捷通道

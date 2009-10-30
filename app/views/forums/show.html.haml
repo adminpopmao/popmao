@@ -1,0 +1,147 @@
+.layout#list
+  = render :partial=>'list_left'
+
+  .list_right
+    #forum_header
+      %dl
+        %dt
+          = link_to "#{image_tag 'http://i3.dukuai.com/ypic/ct_jinhua/2009/04/13/170059_67_meishi.gif'}", "#"
+        %dd
+          %h2
+            = @forum.name
+          =  link_to '订阅', '#', :class=>"icon icon_feed"
+          %p
+            = @forum.description
+          %p
+            版主：
+            空缺中,
+            = link_to "<font color='red'>我要申请>></font>", '#', :target=>"_blank"
+
+    .ad_food_780
+      #adv_forum_1858_banner_780x90
+
+    .pages_btns
+      = render :partial=>'post_topic', :locals => {:serial=>"0"}
+    #forum_nav
+      .tab
+        %ul
+          %li.select
+            = link_to '全部', '#'
+          %li
+            = link_to '精华贴', '#'
+          %li
+            = link_to '投票贴', '#'
+          %li
+            = link_to '图片贴', '#'
+            .icon.icon_new
+              new
+      .search
+        %input#forum_k_w.inp_txt{:type=>"text", :title=>"在本版内搜索...", :value=>"在本版内搜索..."}
+        = link_to '搜索', '#', :class=>"iblock icon icon_search"
+
+
+      .category
+        %ul
+          %li
+            = link_to '<span>车辆</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+          %li
+            = link_to '<span>电器</span>', '#'
+
+      .title
+        .filterorder
+          .order
+            %span.iblock
+              排序：
+            %a.iblock{ :href => "#" }
+              按最新回复
+              %span.iblock
+            .sub_list
+              %span.sublist_bg
+              %ul.sublist_mian
+                %li
+                  %a{ :href => "forumdisplay.php?fid=63&amp;orderby=lastpost&amp;filter=type&amp;type=", :title => "", :rel => "0", :onclick => "window.location=('forumdisplay.php?fid=63&amp;orderby=lastpost&amp;filter=type&amp;type=&amp;typeid=137')" }
+                    按最新回复
+                %li
+                  %a{ :href => "forumdisplay.php?fid=63&amp;orderby=dateline&amp;filter=type&amp;type=", :title => "", :rel => "1", :onclick => "window.location=('forumdisplay.php?fid=63&amp;orderby=dateline&amp;filter=type&amp;type=&amp;typeid=137')" }
+                    按最新发表
+          文字：
+          %a#f_small{ :href => "#19lou" } 小
+          |
+          %a#f_big.select{ :href => "#19lou" } 大
+        %span.author
+          作 者
+        %span.nums
+          回复/查看
+        %span.lastpost
+          最后发表
+
+    %form{:action=>"#", :name=>"moderate", :method=>"post"}
+      #forum_list
+        %ul
+          -#
+            %li
+              .subject
+                %span.icon.pin_2{:title=>"二级置顶主题"}
+                  二级置顶主题
+                = link_to '帖子主题', '#', :target=>'_blank', :title=>'帖子主题'
+                %span.threadpages
+                  = link_to '2', '#'
+                %span.icon_attach
+                  附件
+              %span.author
+                = link_to 'yangxd', '#'
+                %em
+                  2009-10-9
+              %span.nums
+                48/794
+              %span.lastpost
+                = link_to 'qxh', '#'
+                = link_to '2009-10-12 22:13', '#'
+            %li.bg
+              .subject
+                %span.icon.pin_1{:title=>"一级置顶主题"}
+                  一级置顶主题
+                = link_to '帖子主题', '#', :target=>'_blank', :title=>'帖子主题'
+                %span.threadpages
+                  = link_to '2', '#'
+                %span.icon_attach
+                  附件
+              %span.author
+                = link_to 'yangxd', '#'
+                %em
+                  2009-10-9
+              %span.nums
+                48/794
+              %span.lastpost
+                = link_to 'qxh', '#'
+                = link_to '2009-10-12 22:13', '#'
+
+          - @topics.each do |topic|
+            %li{:class=>"#{cycle('','bg')}"}
+              .subject
+                %span.icon.folder{:title=>"新主题"}
+                = link_to "#{topic.subject}", forum_topic_path(@forum,topic)
+              %span.author
+                = link_to "#{topic.user.login}", '#'
+                %em
+                  = "#{show_time(topic.created_at, '%Y-%m-%d')}"
+              %span.nums
+                = "#{topic.replies}/#{topic.hits}"
+              %span.lastpost
+                = link_to "#{topic.last_poster==nil ? topic.user.login : topic.last_poster}", '#'
+                = link_to "#{ show_time(topic.lastpost_at > topic.created_at ? topic.lastpost_at : topic.created_at)}", '#'
+
+    .pages_btns
+      = render :partial=>'post_topic', :locals=>{ :serial=>'1'}

@@ -1,0 +1,20 @@
+#quickmenu.nav_quicklick{:onMouseOver=>"javascript:$('quickmenu').addClassName('nav_quicklick_active');", :onMouseOut=>"javascript:$('quickmenu').removeClassName('nav_quicklick_active');"}
+  %div
+    = link_to '我的快捷通道'
+  %ul
+    %li
+      = link_to "<span class='nav_quick_home'>我家</span>", jia_welcome_index_path
+    %li
+      = link_to "<span class='nav_quick_broad'>心情</span>", "#"
+    %li
+      = link_to "<span class='nav_quick_album'>相册</span>", "#"
+    %li
+      = link_to "<span class='nav_quick_diary'>博客</span>", "#"
+    %li
+      = link_to "<span class='nav_quick_friend'>朋友</span>", "#"
+    %li
+      = link_to "<span class='nav_quick_friend'>消息</span>", "#"
+    %li
+      = link_to "<span class='nav_quick_thread'>我的帖子</span>", "#"
+
+

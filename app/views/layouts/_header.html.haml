@@ -1,0 +1,26 @@
+#header
+  #head
+    %table{:width=>"100%", :cellpadding=>"0", :cellspaeing=>"0"}
+      %tr
+        %td
+          =link_to "#{image_tag 'logo1.png' }", "/", :class=>"fl"
+        %td#banner{:align=>"right"}
+  .nav-wrap
+    #nav
+      %span.nav-left.fl
+      #nav-s
+        =link_to "高级", "/", :class=>"fr"
+        %form{:method=>"post", :onsubmit=>'return false;', :action=>"#", :name=>"sF"}
+          %input{:type=>"hidden",:name=>"step",    :value=>"2"}
+          %input{:type=>"hidden",:name=>"method",  :value=>"AND"}
+          %input{:type=>"hidden",:name=>"sch_area",:value=>"0"}
+          %input{:type=>"hidden",:name=>"sch_area",:value=>"0"}
+          %input{:type=>"hidden",:name=>"f_fid",   :value=>"all"}
+          %input{:type=>"hidden",:name=>"sch_time",:value=>"all"}
+          %input#keyword.s-input{:type=>"text",:name=>"keyword"}
+          %input.s-btn{:type=>"submit",:name=>"submit",:value=>""}
+      #nav-global
+        %ul.cc
+          %li= link_to "门户", "#", :id=>"td_KEYarea"
+          %li.current= link_to '论坛', forums_path, :id=>'td_KEYbbs'
+          %li= link_to '圈子', '#', :id=>'td_KEYYo'

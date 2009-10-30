@@ -1,0 +1,4 @@
+.regItem { padding-bottom:2em ;}
+.regItem dl { padding:.2em 0; margin:0 0 1em 0;}
+.regItem dt{  margin:0;width:30%; float:left; padding-right:2em;text-align:right; font-size:12px; }
+.regItem dd{ float:left;padding-right:2em; margin:0;}

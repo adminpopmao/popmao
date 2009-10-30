@@ -1,0 +1,65 @@
+= stylesheet_link_tag 'post'
+.layout
+  <!-- 当前位置 -->
+  .position
+    %em
+      当前位置：
+    = link_to "江海社区", :root
+    »
+    = link_to "#{@forum.name}", forum_path(@forum)
+    » 发表话题
+
+.layout.newthread
+  %h3
+    发表话题
+  .newth_main
+    - form_for :topic, :url=>forum_topics_path(@forum), :html=>{:id=>'new_topic'} do |f|
+      %ul
+        %li.newthread_th
+          %label.iblock
+            用 户 名：
+          = "#{current_user.login} ["
+          = link_to '退出登录', :logout
+          ]
+        %li.newthread_th
+          %label.iblock
+            标 题：
+          = f.text_field :subject, :maxlength=>"60", :class=>"inp_txt"
+          %em.c_warn
+            [标题限制30个汉字]
+        %li
+          = f.tinymce :content, :size=>'110x20'
+          -#= f.text_area :content, :size=>'110x20'
+        %li.edit_tag
+          %span.iblock.newth_th
+            标 签：
+          = f.text_field :tag, :class=>'inp_txt'
+          /<input type="text" value="" id="tags" name="tags" class="inp_txt" />
+          %p.iblock.c_weak
+            用空格隔开多个标签，最多可填写5个(每个标签限制20个字符)
+            %span.iblock.icon.icon_help.showtitle{:title=>"填入合适的标签，能让别人更快的找到你的文章"}
+              ?
+        %li.newthread_sm
+          = link_to "<span>写好了，发布</span>" , "javascript:$('new_topic').submit()", :class=>"btn_sm"
+
+    %li.editmain
+      .uploadpic
+        %ul.uppic_type
+          %li.uptype_the
+            %span
+              上传图片
+        .upbatch
+          <!-- 选择图片 -->
+          #myphoto
+          - form_for :photo, :url=>add_photo_forum_topics_path(@forum), :html=>{:multipart=>true,:target=>'upload_frame'} do |f|
+            %p
+              %br 
+              %b 上传图片
+              = f.file_field :image_file
+              = f.submit '上传'
+
+          %iframe#upload_frame{:name=>"upload_frame",:style=>"width:1px;height:1px;border:0px",:src=>"about:blank"}
+
+          #upbatch_cpic.upbatch_cpic
+            <!-- 批量上传 -->
+

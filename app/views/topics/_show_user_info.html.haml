@@ -1,0 +1,62 @@
+.plist_slide
+  %span.icon.uaddinfo
+    用户信息
+  %h5.icon.offline
+    = link_to "#{show_user_info.login}", '#', :target=>"_blank"
+  .uface{:onMouseOver=>"this.up('.plist_slide').down('.uinfo_full').setStyle('display:block')"}
+    = link_to "#{image_tag 'space_noface.gif'}", '#'
+  %ul.uinfo
+    %li
+      %span.c_weak
+        不动产：
+      = "#{show_house show_user_info}"
+    %li
+      %span.c_weak
+        威望：
+      = "#{show_user_info.prestige}"
+    %li
+      %span.c_weak
+        金币：
+      = "#{show_user_info.gold}"
+  %ul.uoption
+    %li.icon.uo_sms
+      = link_to '发短信', '#'
+    %li.icon.uo_friend
+      = link_to '加好友', '#'
+    %li.icon.uo_gift
+      = link_to '送礼物', '#'
+  .uinfo_full{:style=>"display: none;", :onMouseOver=>"this.setStyle('display:block;')", :onMouseOut=>"this.setStyle('display:none;')"}
+    %span.sublist_bg
+    .uinfo_full_main
+      .uinfo_full_face
+        = link_to "#{image_tag 'space_noface.gif'}", '#'
+      %ul
+        %li.c_stress
+          %span.c_weak
+            发帖数:
+          = show_user_info.count_posts
+          = link_to '搜索帖子', '#'
+        %li
+          %span.c_weak
+            发帖数级别:
+          Beginner
+          = image_tag "star_level1.gif"
+        %li
+          %span.c_weak
+            注册时间:
+          = show_time(show_user_info.created_at)
+        %li
+          %span.c_weak
+            最后登录:
+          = show_time(show_user_info.last_login_at, '%Y-%m-%d')
+        %li
+          %span.c_weak
+            在线时间:
+          0.67小时
+        %li
+          %span.c_weak
+            认证:
+        %li.uinfo_viewuser
+          = link_to "访问TA的家", "#", :target=>"_blank", :class=>"iblock icon view_uhome"
+        %li.uinfo_medal
+

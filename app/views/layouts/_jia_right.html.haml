@@ -1,0 +1,40 @@
+<!-- sns主要内容结束|右边栏开始 -->
+.circle.slide
+  .invite
+    %h3 邀请好友来做客
+    %p.c_auxi
+      新朋友没混熟，先拉老朋友一起哈皮。邀请成功后获得
+      %strong.alert
+        10
+      个金币
+      = link_to '马上邀请', '#'
+  .visited
+    %h3
+      最近访客
+    .c_auxi.visited_today
+      今日来访：0
+    .msg_common
+      = link_to '我先去看看别人', '#', :id=>"droparound_href_me"
+    .c_auxi.visited_tatal
+      总计来访：0人
+  .visited.maymeet
+    %h3
+      你可能认识TA们
+    .more
+      = link_to '更多', '#', :class=>"icon"
+  .slide_find_friend
+    %h3
+      寻找更多好友
+    %ul
+      %li
+        = link_to '看看谁是我的老乡', '#'
+      %li
+        = link_to '看看谁和我在同一个城市', '#'
+      %li
+        = link_to '看看谁和我同一天生日', '#'
+  .birth
+    %h3
+      过生日的好友
+    .slide_tips.c_auxi
+      最近没有好友过生日
+

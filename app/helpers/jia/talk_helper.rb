@@ -1,0 +1,2 @@
+module Jia::TalkHelper
+end

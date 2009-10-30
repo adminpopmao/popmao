@@ -1,0 +1,27 @@
+<!-- 标题 -->
+.postinfo
+  %h1
+    = link_to "#{@topic.subject}", '#'
+  .post_addinfo
+    %div
+      阅读[
+      %span.c_warn
+        = @topic.hits
+      ] 回复[
+      %span.c_warn
+        = @topic.replies
+      ]
+  %ul.post_option
+    <!-- 只看楼主/阅读全部 -->
+    %li.icon
+      = link_to '只看楼主', '#', :class=>"c_warn", :title=>"只显示楼主发表的帖子和回复"
+    %li.icon
+      = link_to '过滤水贴', '#', :class=>"c_warn", :title=>"不显示纯表情回复"
+    %li#setthreadsize.icon.post_setfsize
+      文字:
+      = link_to '小', "#", :id=>'smallfont'
+      = link_to '大', '#', :id=>'bigfont', :class=>'u_fsize'
+
+= javascript_include_tag 'topic'
+
+

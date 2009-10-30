@@ -1,0 +1,80 @@
+.list_left
+  .widget.ad170x65
+    #adv_forum_1858_left_170x65
+  .widget.stats
+    %h3
+      人气指数
+    %ul
+      %li
+        【总 帖 数】|
+        %span.f_bold.c_orange
+          = Topic.count_topics(@forum)
+      %li>
+        【今日新帖】|
+        %span.f_bold.c_green
+          = Topic.count_topics_of_today(@forum)
+  -#
+    .widget.hotpost
+      %h3
+        热帖检索
+      %ul
+        %li
+          = link_to '实用', '#', :class=>"hot"
+        %li
+          = link_to '温暖', '#'
+        %li
+          = link_to '好玩', '#', :class=>"hot"
+        %li
+          = link_to '浪漫', '#', :class=>"hot"
+        %li
+          = link_to '羡慕', '#', :class=>"hot"
+        %li
+          = link_to '养眼', '#', :class=>"hot"
+        %li
+          = link_to '震撼', '#', :class=>"hot"
+        %li
+          = link_to '爽', '#', :class=>"hot"
+        %li
+          = link_to '痛', '#', :class=>"hot"
+        %li
+          = link_to '八', '#', :class=>"hot"
+        %li
+          = link_to '雷', '#', :class=>"hot"
+        %li
+          = link_to '晕', '#', :class=>"hot"
+
+
+  .widget.tag
+    %h3
+      本版热门标签
+    %ol
+      - step = 0
+      - TopicTag.get_hot_tag(@forum.id).each do |tag|
+        - step += 1
+        %li
+          %span
+            = step
+          = link_to "#{tag.name}", find_tags_forum_path(@forum, :tags=>tag.name)
+          (#{tag.account})
+    -#
+      %p.more
+        = link_to '更多', '#'
+
+  -#
+    .widget
+      .link
+        = link_to "你最近访问的版块...<span class='iblock' />","#"
+        .sub_list
+          %span.sublist_bg
+          %ul.sublist_mian
+            %li
+              = link_to '同乡会', '#'
+            %li
+              = link_to '我拍我秀', '#'
+  %br
+  %br
+  %br
+  %br
+  %br
+
+

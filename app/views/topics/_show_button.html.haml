@@ -1,0 +1,10 @@
+.viewthread
+  %ul.thread_option
+    %li.newreplay
+      = link_to '回复', "javascript:$('post_content').focus();", :title=>"回复", :class=>"btn_reply"
+    %li.postnewthread
+      = render :partial=>'forums/post_topic'
+  <!-- 分页 -->
+  .pages
+    %ul
+

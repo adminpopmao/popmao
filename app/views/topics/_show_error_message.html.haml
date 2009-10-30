@@ -1,0 +1,5 @@
+%div{:style =>"color: red;"} 
+  = "主题#{@topic.errors[:subject].kind_of?(Array) ? @topic.errors[:subject].join(',') : @topic.errors[:subject]}"
+  %br
+  = "内容#{@topic.errors[:content]}"
+

@@ -1,0 +1,37 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,label,textarea,p,blockquote,th,td,img{margin:0;padding:0;}
+img {border:none;}
+table,td,tr,th{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400;}
+ol,ul{list-style:none;}
+body{font-family:"宋体",Arial,Helvetica,sans-serif,SimSun;font-size:12px;color:#333; background:#FFFFFF url(/images/19lou_city_backdrop.gif) repeat-x 0 0;}
+a{text-decoration:none;color:#333333;}
+a:hover{text-decoration:underline;color:#0657b2;}
+.c_4, .c_4 a {color:#4444} 
+a.c_4:hover, .c_4 a:hover {color:#0657b2}
+.c_6, .c_6 a {color:#666666} 
+a.c_6:hover, .c_6 a:hover {color:#0657b2}
+.c_9, .c_9 a {color:#999999}
+a.c_9:hover, .c_9 a:hover {color:#0657b2}
+.c_069, .c_069 a{color:#006699;}
+a.c_069:hover, .c_069 a:hover {color:#0657b2}
+#wrap {margin:0 auto;width:980px;overflow:hidden;}
+#wrapall {margin:0 auto;width:99.3%;overflow:hidden;}
+/*--header--*/
+#header {height:105px;background:url(/images/city_shodow.png) repeat-x 0 98px;overflow:hidden;}
+#header h1 ,#header .ulogin dl, #header .ulogin dt, #header .ulogin dd, #header form, #header input, #header img {margin:0;padding:0;vertical-align:middle}
+#header h1 {float:left;}
+#header .top_bg {float:left;padding:0;width:284px;}
+#header #center {float:right;width:350px;height:70px;text-align:right;background:none;overflow:hidden;}
+#header #center #loginstatus {font-family:"Arial"; }
+#header .search {position:relative;clear:both;width:100%;height:33px;background:#C6DCA1;overflow:hidden;}
+#header .search form {margin:1px;height:29px;width:976px;border:1px solid #FFFFFF;background:url(/images/city_bg_nav.png) repeat-x 0 0px;overflow:hidden;}
+#header cite {display:none;}
+#wrapall #header {overflow:Hidden;}
+#wrapall #header .search form {width:100%;}
+#wrapall #header cite {display:block;position:absolute;top:0;right:0;width:3px;height:33px;background:url(/images/city_icon.gif) no-repeat -20px -100px}
+#header .search form label {float:right;margin:3px 5px 0 0;height:22px;line-height:22px;vertical-align:middle;}
+#header .search .keyworks {margin-left:5px;padding-top:3px;border:1px solid #9DC044;height:16px;line-height:15px;width:172px;background:url(/images/city_bg_input_notice.gif) no-repeat 0 -7px; color:#666;}
+#header .search .login {margin-right:5px;}
+#header .search form span {float:left;padding-left:8px;height:29px;line-height:29px;}
+#header .search form span a {color:#334F67}
+.safetynotice{ width:96%; float:left; text-align:left;position:relative; margin:2px;background:#fffce9; border:1px solid #edddab; color:#c0880f; padding:5px;}

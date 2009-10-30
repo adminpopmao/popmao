@@ -1,0 +1,289 @@
+/* popmao.com , Created by [Y]ntxiaoxiao , 2009-10-11 */
+
+
+#baipin u{color:#0657b2; text-decoration:underline}
+#baipin b{color:#fc6d02}
+#baipin strong{ color:#fc6d02; font-weight:bold}
+#baipin em{color:#fc6d02;font-style:normal}
+
+#baipin { width:780px; font-family:"宋体";overflow:hidden;}
+	#baipin ul, #baipin ol {margin:0;padding:0;}
+	
+#baipin .top,#baipin .end{overflow:hidden;float:left;width:780px;height:10px;font:1px/1px Arial; }
+
+#baipin .title{overflow:hidden;width:780px; height:32px;line-height:32px; }
+#baipin .title samp{ float:left;width:300px;font-size:14px; font-weight:bold;text-indent:10px;}
+#baipin .title span{ float:left;width:470px;text-align:right;line-height:32px;font-size:12px; }
+
+
+#baipin .sort{width:778px; height:25px;line-height:25px; overflow:hidden}
+#baipin .sort samp{ float:left;width:300px; font-size:12px; font-weight:bold;text-indent:20px;}
+#baipin .sort span{ float:left;width:470px; text-align:right;line-height:25px;font-size:12px; }
+
+
+#baipin .streamer{overflow:hidden;float:left; width:780px; overflow:hidden;;font:1px/1px Arial;background:#FFFFFF;}
+
+
+#baipin .module{overflow:hidden;width:778px;background:#FFFFFF;}
+
+/*文字们*/
+#baipin .text{width:760px;margin:0 0 0 10px;-margin:0 0 0 5px;overflow:hidden;}
+#baipin .text h1{text-align:center; line-height:60px;font-size:30px;font-family:"微软雅黑","黑体"; color:#333333;background:none;}
+#baipin .text dt{height:20px;text-align:center; line-height:20px;font-size:12px;color:#666666; border-bottom:1px #CCCCCC dashed;}
+#baipin .text dd{margin:20px 0 20px 0;line-height:20px; color:#333333;font-size:14px;}
+
+
+#baipin .list380x2 {width:760px;margin:5px auto 0 auto;text-align:left;overflow:hidden; font-family: "宋体";}
+#baipin .list380x2 ul{width:760px;float:left;overflow:hidden; }
+#baipin .list380x2 ul li{width:373px;list-style:none;float:left;overflow:hidden;}
+#baipin .list380x2 ul li a {width:360px;height:22px; line-height:22px;display:block; margin-left:7px;cursor:hand}
+#baipin .list380x2 ul li a b{width:auto; float:left; font-size:14px;font-weight:normal; color:#c0880f;}
+#baipin .list380x2 ul li a span{ width:auto; float:left; margin-left:4px;font-size:14px; color:#333333;}
+#baipin .list380x2 ul li a span strong{color:#FF6600}
+#baipin .list380x2 ul li a strong{ width:auto; float:left; margin-left:4px;font-size:14px; font-weight:normal;color:#fc6d02}
+#baipin .list380x2 ul li a em{ width:auto; float:right;  font-size:12px;color:#999999; font-style:normal;text-align:right; }
+#baipin .list380x2 ul li a:hover{width:360px;height:22px; line-height:22px;color:#0557b4;text-decoration: none; }
+#baipin .list380x2 ul li a:hover b,#baipin .list380x2 ul li a:hover span,#baipin .list380x2 ul li a:hover strong,#baipin .list380x2 ul li a:hover em,#baipin .list380x2 ul li a b:hover,#baipin .list380x2 ul li a span:hover,#baipin .list380x2 ul li a em:hover{color:#0557b4; text-decoration:underline}
+#baipin .list380x2 strong,#baipin .list380x2 font{ color:#333333}
+#baipin .list380_type_a {padding-left:10px;width:770px;}
+	#baipin .list380_type_a .sort samp {text-indent:40px;}
+	#baipin .list380_type_a .sort span {width:50px;}
+	#baipin .list380_type_a dl {float:left;width:380px;overflow:hidden;}
+		#baipin .list380_type_a .sort {width:360px;border:none;overflow:hidden;}
+		#baipin .list380_type_a dd {float:left;margin:0;overflow:hidden;}
+			#baipin .list380_type_a ul {margin-top:10px;width:360px;font-size:14px;}
+				#baipin .list380_type_a ul li, #baipin .list380_type_a ul li a {margin:0;width:100%;}
+
+#baipin .list250x3 {width:760px;margin:5px auto 0 auto;}
+#baipin .list250x3 ul{width:760px;float:left;overflow:hidden;list-style-type:none;}
+#baipin .list250x3 ul li{width:253px;height:22px;line-height:22px;float:left;overflow:hidden;background:url(http://image.dukuai.com/dukuai/upload/ui/08/ico/b00204.gif) 8px 8px no-repeat; font-weight:normal; text-indent:15px;}
+#baipin .list250x3 a:link,#baipin .list250x3 a:visited {font-size:14px;text-decoration:none;margin-left:2px;}
+#baipin .list250x3 a:hover {text-decoration:underline;}
+
+
+#baipin .list190x4 {width:760px;margin:5px auto 0 auto;}
+#baipin .list190x4 ul{width:760px;float:left;overflow:hidden;list-style-type:none;}
+#baipin .list190x4 ul li{width:190px;height:22px;line-height:22px;float:left;overflow:hidden;background:url(http://image.dukuai.com/dukuai/upload/ui/08/ico/b00204.gif) 8px 7px no-repeat; font-weight:normal; text-indent:15px;}
+#baipin .list190x4 a:link,#baipin .list190x4 a:visited {font-size:12px;text-decoration:none;margin-left:2px;}
+#baipin .list190x4 a:hover {text-decoration:underline;}
+
+
+#baipin .list160 {width:160px;margin:0 auto 0 auto;}
+#baipin .list160 ul{width:160px;float:left;list-style-type:none;}
+#baipin .list160 ul li{width:160px;line-height:16px;float:left; margin-top:4px;text-align:left;font-weight:normal;}
+#baipin .list160 a:link,#baipin .list160 a:visited {font-size:12px;text-decoration:none;margin-left:2px;}
+#baipin .list160 a:hover {text-decoration:underline;}
+
+
+/*图片们*/
+#baipin .module .A80x80{float:left;margin:10px 6px 0 20px;-margin:10px 11px 0 13px;width:82px;text-align:center;overflow:hidden; }
+#baipin .module .A80x80 img{ width:80px; height:80px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A80x80 a{ font-size:12px;line-height:16px;}
+
+#baipin .module .A120x90{float:left;margin:10px 9px 0 20px;-margin:10px 14px 0 13px;width:122px;text-align:center;overflow:hidden; }
+#baipin .module .A120x90 img{ width:120px; height:90px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A120x90 a{font-size:12px;line-height:16px;}
+
+#baipin .module .A160x120{float:left;margin:10px 7px 0 20px;-margin:10px 12px 0 12px;width:162px;text-align:center;overflow:hidden; }
+#baipin .module .A160x120 img{ width:160px; height:120px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A160x120 a{font-size:12px;line-height:16px;}
+
+#baipin .module .A160x100{float:left;width:162px;text-align:center;overflow:hidden; }
+#baipin .module .A160x100 img{ width:160px; height:100px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A160x100 a{font-size:12px;line-height:12px;}
+
+#baipin .module .A160x220{float:left;margin:10px 7px 0 20px;-margin:10px 12px 0 12px;width:162px;text-align:center;overflow:hidden; }
+#baipin .module .A160x220 img{ width:160px; height:220px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A160x220 a{font-size:12px;line-height:16px;}
+
+#baipin .module .A190x260{float:left;margin:10px 30px 0 30px;-margin:10px 35px 0 20px;width:192px;text-align:center;overflow:hidden; }
+#baipin .module .A190x260 img{ width:190px; height:260px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A190x260 a{font-size:12px;line-height:16px;}
+
+#baipin .module .A220x160{float:left;margin:10px 10px 0 20px;-margin:10px 14px 0 12px;width:222px;text-align:center;overflow:hidden; }
+#baipin .module .A220x160 img{ width:220px; height:160px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A220x160 a{font-size:12px;line-height:16px;}
+
+#baipin .module .A320x240{float:left;margin:10px 10px 0 32px;-margin:10px 14px 0 20px;width:322px;text-align:center;overflow:hidden; }
+#baipin .module .A320x240 img{ width:320px; height:240px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .module .A320x240 a{font-size:12px;line-height:16px;}
+
+
+
+/*图文们*/
+#baipin .imgtext380x2{float:left;width:360px; height:105px; margin:0 0 0 10px;}
+#baipin .imgtext380x2 a{width:341px; height:90px;float:left; margin:10px 0 0 10px;font-size:12px;cursor:hand;overflow:hidden;}
+#baipin .imgtext380x2 a img{width:120px; height:90px;float:left;}
+#baipin .imgtext380x2 a strong{width:200px; height:22px; line-height:22px;float:left; color:#333333;margin:0 0 0 5px;font-size:18px;overflow:hidden;}
+#baipin .imgtext380x2 a span{width:200px; height:70px;float:left; line-height:17px;margin:0 0 0 5px;}
+#baipin .imgtext380x2 a:hover,#baipin .imgtext380x2 a:hover strong,#baipin .imgtext380x2 a:hover span{text-decoration:underline;}
+#baipin .imgtext780 {clear:both;margin:0;display:block;padding:10px;width:758px;height:auto;overflow:hidden;}
+	#baipin .imgtext780 dt{width:300px;height:100%;overflow:hidden}
+	#baipin .img_left dt {float:left;}
+	#baipin .img_right dt {float:right;}
+	#baipin .imgtext780 dd {margin:0;width:440px;height:100%;overflow:hidden}
+	#baipin .img_left dd {float:right;}
+	#baipin .img_right dd {float:left;}
+		#baipin .imgtext780 dd a {display:block;}
+			#baipin .imgtext780 h5 {height:60px;line-height:60px;text-align:center;font-family:"黑体";font-size:30px;font-weight:100;overflow:hidden;}
+			#baipin .imgtext780 p {line-height:20px;font-size:14px;}
+/*图片轮播*/
+#baipin .slideplayer {padding:10px;}
+	#baipin .slideplayer ul, #baipin .slideplayer div {float:left;}
+	#baipin .slideplayer dl {float:right;margin:0;width:430px;} 
+		#baipin .slideplayer dl a {display:block;cursor:pointer;}
+			#baipin .slideplayer dt {height:60px;line-height:60px;text-align:center;font-family:"黑体";font-size:30px;font-weight:100;overflow:hidden;}
+			#baipin .slideplayer dd {margin:0;line-height:150%;font-size:14px;}
+/*图文们*/
+#baipin .imgtext760_01{width:760px;margin:0 0 0 10px;-margin:0 0 0 5px;overflow:hidden;}
+
+#baipin .imgtext760_01 .image{ margin:10px 9px 0 20px;-margin:10px 14px 0 10px;width:190px;float:left;text-align:center;overflow:hidden;}
+#baipin .imgtext760_01 .image img{ width:190px; height:260px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .imgtext760_01 .image a{font-size:12px;line-height:16px;}
+
+#baipin .imgtext760_01 .image2{ width:530px;float:left; }
+#baipin .imgtext760_01 .image2 img{ width:160px; height:120px;display:block;border:1px solid #e8e8e8; margin-bottom:5px;}
+#baipin .imgtext760_01 .image2 a{width:160px;float:left;margin:10px 5px 0 10px;-margin:10px 5px 0 10px;text-align:center;font-size:12px;overflow:hidden;line-height:16px;}
+
+#baipin .imgtext760_01 .text {width:530px;height:130px;margin:10px 0 0 0;-margin:10px 0 0 0;float:left; }
+#baipin .imgtext760_01 .text a{width:530px;float:left;text-align:left;overflow:hidden;cursor:hand;}
+#baipin .imgtext760_01 .text a strong{ color:#333333;line-height:32px; font-size:22px;}
+#baipin .imgtext760_01 .text a span{ font-size:14px; line-height:22px;}
+
+#baipin .imgtext760_01 .list530 {width:530px;}
+#baipin .imgtext760_01 .list530 ul{width:530px;float:left;overflow:hidden;list-style-type:none;}
+#baipin .imgtext760_01 .list530 ul li{width:265px;height:22px;line-height:22px;float:left;overflow:hidden;background:url(http://image.dukuai.com/dukuai/upload/ui/08/ico/b00204.gif) 0 8px no-repeat; font-weight:normal; text-indent:8px;}
+#baipin .imgtext760_01 .list530 a:link,#baipin .imgtext760_01 .list530 a:visited {font-size:14px;text-decoration:none;margin-left:2px;}
+#baipin .imgtext760_01 .list530 a:hover {text-decoration:underline;}
+
+#baipin .module .box160{float:left;margin:10px 7px 0 20px;-margin:10px 12px 0 12px;width:162px; height:240px;text-align:center;overflow:hidden;}
+#baipin .img_left_textright {clear:both;overflow:hidden;}
+		#baipin .img_left_textright .img_left {float:left;width:180px;}
+			#baipin .img_left_textright .img_left a {display:block;margin:0 auto 10px;width:160px;line-height:19px;text-align:center;}
+				#baipin .img_left_textright .img_left a:hover img {text-decoration:none;}
+		#baipin .img_left_textright .text_right {float:right;width:570px;}
+			#baipin .img_left_textright dl {margin-bottom:30px;}
+				#baipin .img_left_textright dl a {display:block;}
+					#baipin .img_left_textright dt {height:40px;line-height:40px;text-align:center;font-family:"黑体";font-size:26px;font-weight:100;overflow:hidden;cursor:pointer;}
+					#baipin .img_left_textright dd {margin:0;line-height:150%;font-size:14px;cursor:pointer;}
+
+/*多彩样式们*/
+.style_A1 .title,.style_A1 .sort,.style_A1 .top,.style_A1 .end,.style_A1 .title,.style_A1 .sort,.style_A1 .top,.style_A1 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A1 .title{ background-position:-10px -610px;}
+.style_A1 .sort{ background-position:-10px -660px;}
+.style_A1 .top{ background-position:-10px -650px;}
+.style_A1 .end{ background-position:-10px -685px;}
+.style_A1 .sort,.style_A1 .module{border-left:1px solid #dadada;border-right:1px solid #dadada}
+.style_A1 .title samp a,.style_A1 .sort samp a{color: #333333}
+.style_A1 .title samp a:hover,.style_A1 .sort samp a:hover,.style_A1 a:hover{color:#333333; text-decoration:underline}
+.style_A1 a{color: #333333}
+
+.style_A2 .title,.style_A2 .sort,.style_A2 .top,.style_A2 .end,.style_A2 .title,.style_A2 .sort,.style_A2 .top,.style_A2 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A2 .title{ background-position:-10px -510px;}
+.style_A2 .sort{ background-position:-10px -560px;}
+.style_A2 .top{ background-position:-10px -550px;}
+.style_A2 .end{ background-position:-10px -585px;}
+.style_A2 .sort,.style_A2 .module{ border-left:1px solid #c5e1f6;border-right:1px solid #c5e1f6}
+.style_A2 .title samp a,.style_A2 .sort samp a{color: #066296}
+.style_A2 .title samp a:hover,.style_A2 .sort samp a:hover,.style_A2 a:hover{color:#066296; text-decoration:underline}
+.style_A2 a{color: #333333}
+
+
+.style_A3 .title,.style_A3 .sort,.style_A3 .top,.style_A3 .end,.style_A3 .title,.style_A3 .sort,.style_A3 .top,.style_A3 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A3 .title{ background-position:-10px -410px;}
+.style_A3 .sort{ background-position:-10px -460px;}
+.style_A3 .top{ background-position:-10px -450px;}
+.style_A3 .end{ background-position:-10px -485px;}
+.style_A3 .sort,.style_A3 .module{ border-left:1px solid #f3d9a6;border-right:1px solid #f3d9a6}
+.style_A3 .title samp a,.style_A3 .sort samp a{color: #f44d04}
+.style_A3 .title samp a:hover,.style_A3 .sort samp a:hover,.style_A3 a:hover{color:#f44d04; text-decoration:underline}
+.style_A3 a{color: #333333}
+
+
+.style_A4 .title,.style_A4 .sort,.style_A4 .top,.style_A4 .end,.style_A4 .title,.style_A4 .sort,.style_A4 .top,.style_A4 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A4 .title{ background-position:-10px -310px;}
+.style_A4 .sort{ background-position:-10px -360px;}
+.style_A4 .top{ background-position:-10px -350px;}
+.style_A4 .end{ background-position:-10px -385px;}
+.style_A4 .sort,.style_A4 .module{ border-left:1px solid #c3eaea;border-right:1px solid #c3eaea}
+.style_A4 .title samp a,.style_A4 .sort samp a{color: #0099a3}
+.style_A4 .title samp a:hover,.style_A4 .sort samp a:hover,.style_A4 a:hover{color:#0099a3; text-decoration:underline}
+.style_A4 a{color: #333333}
+
+
+.style_A5 .title,.style_A5 .sort,.style_A5 .top,.style_A5 .end,.style_A5 .title,.style_A5 .sort,.style_A5 .top,.style_A5 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A5 .title{ background-position:-10px -210px;}
+.style_A5 .sort{ background-position:-10px -260px;}
+.style_A5 .top{ background-position:-10px -250px;}
+.style_A5 .end{ background-position:-10px -285px;}
+.style_A5 .sort,.style_A5 .module{ border-left:1px solid #efd1c6;border-right:1px solid #efd1c6}
+.style_A5 .title samp a,.style_A5 .sort samp a{color: #e5213d}
+.style_A5 .title samp a:hover,.style_A5 .sort samp a:hover,.style_A5 a:hover{color:#e5213d; text-decoration:underline}
+.style_A5 a{color: #333333}
+
+
+.style_A6 .title,.style_A6 .sort,.style_A6 .top,.style_A6 .end,.style_A6 .title,.style_A6 .sort,.style_A6 .top,.style_A6 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A6 .title{ background-position:-10px -110px;}
+.style_A6 .sort{ background-position:-10px -160px;}
+.style_A6 .top{ background-position:-10px -150px;}
+.style_A6 .end{ background-position:-10px -185px;}
+.style_A6 .sort,.style_A6 .module{ border-left:1px solid #e8dcb6;border-right:1px solid #e8dcb6}
+.style_A6 .title samp a,.style_A6 .sort samp a{color: #964609}
+.style_A6 .title samp a:hover,.style_A6 .sort samp a:hover,.style_A6 a:hover{color:#964609; text-decoration:underline}
+.style_A6 a{color: #333333}
+
+.style_A7 .title,.style_A7 .sort,.style_A7 .top,.style_A7 .end,.style_A7 .title,.style_A7 .sort,.style_A7 .top,.style_A7 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_A.gif) no-repeat}
+.style_A7 .title{ background-position:-10px -10px;}
+.style_A7 .sort{ background-position:-10px -60px;}
+.style_A7 .top{ background-position:-10px -50px;}
+.style_A7 .end{ background-position:-10px -85px;}
+.style_A7 .sort,.style_A7 .module{ border-left:1px solid #d9e6bb;border-right:1px solid #d9e6bb}
+.style_A7 .title samp a,.style_A7 .sort samp a{color: #517a25}
+.style_A7 .title samp a:hover,.style_A7 .sort samp a:hover,.style_A7 a:hover{color:#517a25; text-decoration:underline}
+.style_A7 a{color: #333333}
+
+
+
+
+
+
+/*奥运样式们*/
+.style_B1 .title,.style_B1 .sort,.style_B1 .top,.style_B1 .end,.style_B1 .title,.style_B1 .sort,.style_B1 .top,.style_B1 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_B.gif) no-repeat}
+.style_B1 .title{ background-position:-10px -10px;}
+.style_B1 .sort{background-position:-10px -60px;}
+.style_B1 .top{ background-position:-10px -50px;}
+.style_B1 .end{ background-position:-10px -85px;}
+.style_B1 .sort,.style_B1 .module{border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb}
+.style_B1 .title samp a,.style_B1 .title span a{color:#ffffff;}
+.style_B1 .title samp a:hover,.style_B1 .title span a:hover{color:#ffffff;}
+.style_B1 .sort samp a{color: #e53a06; text-indent:40px;}
+.style_B1 .sort samp a:hover,.style_B1 a:hover{color:#e53a06; text-decoration:underline}
+.style_B1 a{color: #333333}
+
+
+
+
+.style_B2 .title,.style_B2 .sort,.style_B2 .top,.style_B2 .end,.style_B2 .title,.style_B2 .sort,.style_B2 .top,.style_B2 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_B.gif) no-repeat}
+.style_B2 .title{ background-position:-10px -110px;}
+.style_B2 .sort{ background-position:-10px -160px;}
+.style_B2 .top{ background-position:-10px -150px;}
+.style_B2 .end{ background-position:-10px -185px;}
+.style_B2 .sort,.style_B2 .module{ border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb}
+.style_B2 .title samp a,.style_B2 .title span a{color:#ffffff;}
+.style_B2 .title samp a:hover,.style_B2 .title span a:hover{color:#ffffff;}
+.style_B2 .sort samp a{color: #0070a7; text-indent:40px;}
+.style_B2 .sort samp a:hover,.style_B2 a:hover{color:#0070a7; text-decoration:underline}
+.style_B2 a{color: #333333}
+
+
+.style_B3 .title,.style_B3 .sort,.style_B3 .top,.style_B3 .end,.style_B3 .title,.style_B3 .sort,.style_B3 .top,.style_B3 .end{background: url(http://image.dukuai.com/dukuai/upload/ui/08/baipin/baipin_style_B.gif) no-repeat}
+.style_B3 .title{ background-position:-10px -210px;}
+.style_B3 .sort{ background-position:-10px -260px;}
+.style_B3 .top{ background-position:-10px -250px;}
+.style_B3 .end{ background-position:-10px -285px;}
+.style_B3 .sort,.style_B3 .module{ border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb}
+.style_B3 .title samp a,.style_B3 .title span a{color:#ffffff;}
+.style_B3 .title samp a:hover,.style_B3 .title span a:hover{color:#ffffff;}
+.style_B3 .sort samp a{color: #06810b;text-indent:40px;}
+.style_B3 .sort samp a:hover,.style_B3 a:hover{color:#06810b; text-decoration:underline}
+.style_B3 a{color: #333333}

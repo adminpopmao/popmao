@@ -1,0 +1,105 @@
+.main
+  %input{ :name => "do", :type => "hidden", :value => "update" }
+  .info.parinfo
+    %table.border_deep
+      %thead
+        %th
+        %td.cont
+        %td.perview
+          谁可以看见
+      %tbody
+        %tr
+          %th.c_auxi
+            婚恋情况：
+          %td
+            %select#marriage{ :name => "marriage" }
+              %option{ :value => "\346\234\252\345\251\232" }
+                未婚
+              %option{ :value => "\345\267\262\345\251\232" }
+                已婚
+          %td.perview
+            %label
+              %select{ :name => "marriage_p" }
+                %option{ :selected => "", :value => "1" }
+                  任何人
+                %option{ :value => "2" }
+                  仅好友
+                %option{ :value => "3" }
+                  保密
+        %tr
+          %th.c_auxi
+            个人主页：
+          %td
+            %label.txt
+              %input#site{ :name => "site", :type => "text", :value => "" }
+          %td.perview
+            %label
+              %select{ :name => "site_p" }
+                %option{ :selected => "", :value => "1" }
+                  任何人
+                %option{ :value => "2" }
+                  仅好友
+                %option{ :value => "3" }
+                  保密
+        %tr.atxt
+          %th.c_auxi
+            兴趣爱好：
+          %td
+            %label
+              %textarea#interest{ :name => "interest" }
+          %td.perview
+            %label
+              %select{ :name => "interest_p" }
+                %option{ :selected => "", :value => "1" }
+                  任何人
+                %option{ :value => "2" }
+                  仅好友
+                %option{ :value => "3" }
+                  保密
+        %tr
+          %th.c_auxi
+            我的心愿：
+          %td
+            %label.txt
+              %input#wish{ :name => "wish", :type => "text", :value => "" }
+          %td.perview
+            %label
+              %select{ :name => "wish_p" }
+                %option{ :selected => "", :value => "1" }
+                  任何人
+                %option{ :value => "2" }
+                  仅好友
+                %option{ :value => "3" }
+                  保密
+        %tr.atxt
+          %th.c_auxi
+            我喜欢的运动：
+          %td
+            %label
+              %textarea#sports{ :name => "sports" }
+          %td.perview
+            %label
+              %select{ :name => "sports_p" }
+                %option{ :selected => "", :value => "1" }
+                  任何人
+                %option{ :value => "2" }
+                  仅好友
+                %option{ :value => "3" }
+                  保密
+      %tbody#addtr
+      %tbody
+        %tr
+          %th
+            %label.txt
+              %input#field1{ :name => "field1", :type => "input" }
+          %td
+            %label.txt
+              %input#fieldvalue1{ :name => "fieldvalue1", :type => "text" }
+            %span#addbuttondiv.btn_option
+              %span
+                %button#addbutton
+                  添加
+    %span.sumbit
+      %span
+        %button#detailadd
+          保存设置

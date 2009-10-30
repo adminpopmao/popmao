@@ -1,0 +1,38 @@
+.plist_main
+  <!-- 帖子内容 -->
+  .container
+    .c_weak.plist_posttime
+      = show_time show_post_content.created_at
+    <!-- 帖子标题 -->
+    <!-- 帖子正文 -->
+    .postcontent
+      <!--上侧广告 -->
+      .ad_thread_text
+      <!--上侧广告 -->
+      <!-- 右侧广告 -->
+      .ad_thread_100_300
+      <!-- 右侧广告 -->
+      .t_msgfont#message294128527
+        = show_post_content.content
+    <!-- 评分 -->
+    <!-- 评分结束 -->
+  <!-- 操作开始 gwang-->
+  <!-- 操作开始 -->
+  .adm_option_sub
+    .adm_uoption
+      %ul.adm_uoptionlist
+        - if current_user
+          %li.icon
+            = link_to '引用', '#'
+          %li.icon
+            = link_to '举报', '#'
+          %li.icon
+            = link_to '回复', "javascript:$('post_content').focus();"
+        %li.icon
+          = link_to '只看该作者', '#'
+        %li.checkfloor
+          = link_to 'top', '#', :class=>'iblock icon'
+        %li.floorno.beplaced
+          = link_to "<strong class='c_warn'>楼主</strong><sup class='c_weak'>#</sup>", '#', :title=>"复制帖子链接到剪贴板", :class=>"bold"
+  <!-- 操作结束 -->
+

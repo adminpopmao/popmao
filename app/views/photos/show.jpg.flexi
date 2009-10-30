@@ -1,0 +1,3 @@
+@photo.operate do |image|
+  image.resize '320*240'
+end

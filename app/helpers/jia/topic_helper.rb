@@ -1,0 +1,2 @@
+module Jia::TopicHelper
+end

@@ -1,0 +1,48 @@
+.plist_main
+  .container
+    .c_weak.plist_posttime
+      = show_time(show_topic_content.created_at)
+    .postcontent
+      .ad_thread_text
+      .ad_thread_100_300
+      .t_msgfont#message293446214
+        %span#postmessage_293446214
+          = show_topic_content.content
+      %br
+      %br
+      %br
+      %span.bold
+        标签:
+        - all_tags = show_topic_content.tag.split
+        - all_tags.each do |t|
+          = link_to "<span class='bold'><font color='red'>#{t}</font></span>", find_tags_forum_path(@forum, :tags=>t)
+        -# = link_to "<span class='bold'><font color='red'>#{show_topic_content.tag}</font></span>", '#'
+    -# if current_user
+      %ul.user_option
+        %li#rate_btn.iblock.rate
+          = link_to '评分', '#'
+        %li.iblock.share
+          = link_to '分享', '#'
+        %li.iblock.reply
+          = link_to '回复', "javascript:$('post_content').focus();"
+  <!-- 操作开始 -->
+  .adm_option_sub
+    .adm_uoption
+      %ul.adm_uoptionlist
+        - if current_user
+          %li.icon
+            = link_to '收藏', '#'
+          %li.icon
+            = link_to '引用', '#'
+          %li.icon
+            = link_to '举报', '#'
+          %li.icon
+            = link_to '回复', "javascript:$('post_content').focus();"
+        %li.icon
+          = link_to '只看该作者', '#'
+        %li.checkfloor
+          = link_to 'top', '#', :class=>'iblock icon'
+        %li.floorno.beplaced
+          = link_to "<strong class='c_warn'>楼主</strong><sup class='c_weak'>#</sup>", '#', :title=>"复制帖子链接到剪贴板", :class=>"bold"
+
+

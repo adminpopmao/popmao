@@ -1,0 +1,9 @@
+.postnewthread{:onMouseOver=>"javascript:$$('div.postnewthread')[#{serial}].addClassName('postnewthread_active');", |
+               :onMouseOut=>"javascript:$$('div.postnewthread')[#{serial}].removeClassName('postnewthread_active');"}
+  = link_to "<span><em class='icon'>发表新贴</em></span>", new_forum_topic_path(@forum), :class=>'btn_sm'
+  .sub_list
+    .sublist_bg
+    %ul.sublist_mian
+      %li
+        = link_to '发表帖子',new_forum_topic_path(@forum)
+

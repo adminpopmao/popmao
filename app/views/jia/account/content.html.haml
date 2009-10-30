@@ -1,0 +1,120 @@
+.main
+  %form#readinfoform{ :name => "readinfoform", :method => "post", :action => "http://jia.19lou.com/?q=account/realinfo" }
+    %input{ :name => "do", :type => "hidden", :value => "update" }
+    .info.parinfo
+      %table.border_deep
+        %thead
+          %th
+          %td.cont
+          %td.perview
+            谁可以看见
+        %tbody
+          %tr
+            %th.c_auxi
+              真实姓名：
+            %td
+              %label.txt
+                %input#truenamenew{ :name => "truenamenew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "truename_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              邮编：
+            %td
+              %label.txt
+                %input#zipcodenew{ :name => "zipcodenew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "zipcode_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              电话：
+            %td
+              %label.txt
+                %input#telephonenew{ :name => "telephonenew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "telephone_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              手机：
+            %td
+              %label.txt
+                %input#mobilenew{ :name => "mobilenew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "mobile_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              QQ：
+            %td
+              %label.txt
+                %input#qqnew{ :name => "qqnew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "qq_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              MSN：
+            %td
+              %label.txt
+                %input#msnnew{ :name => "msnnew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "msn_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+          %tr
+            %th.c_auxi
+              Gtalk：
+            %td
+              %label.txt
+                %input#gtalknew{ :name => "gtalknew", :type => "text", :value => "" }
+            %td.perview
+              %label
+                %select{ :name => "gtalk_p" }
+                  %option{ :value => "1" }
+                    任何人
+                  %option{ :value => "2" }
+                    仅好友
+                  %option{ :selected => "", :value => "3" }
+                    保密
+      %span.sumbit
+        %span
+          %button#realadd{ :name => "submit", :type => "submit" }
+            保存设置

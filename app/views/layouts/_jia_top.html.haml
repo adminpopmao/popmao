@@ -1,0 +1,51 @@
+.header#header
+  %h2
+    = link_to '我家', jia_welcome_index_path
+  %ul.nav
+    %li
+      = link_to '我的家首页', jia_welcome_index_path
+    %li.showdropmenu
+      %span
+      .dropbar
+        = link_to '好友', '#', :class=>'icon'
+      .dropmenu
+        .dropmenu_bg
+        %ul
+          %li
+            = link_to '我的好友', '#'
+            = link_to '我的访客', '#'
+            = link_to '我的足迹', '#'
+            = link_to '寻找好友', '#'
+            = link_to '邀请好友', '#'
+    %li
+      = link_to '消息', '#'
+  %ul.quicklink
+    %li.icon.changeskin
+      = link_to '换肤', '#'
+    %li.icon.showdropmenu
+      %span
+      .dropbar
+        = link_to '设置', '#', :class=>'icon'
+      .dropmenu.config
+        .dropmenu_bg
+        %ul
+          %li
+            = link_to '帐户', '#'
+          %li
+            = link_to '隐私', '#'
+    %li.icon
+      = link_to '金币', '#'
+    %li.icon.showdropmenu.nav_backhome
+      %span
+      .dropbar
+        = link_to '回首页', '#'
+    %li.icon
+      = link_to '帮助', '#'
+    %li.icon
+      = link_to '退出', '#'
+  <!-- 天气预报 -->
+  .weather#weather
+  <!-- 不动产图标 -->
+  .per_house.per_house_lev14
+<!-- head结束 -->
+

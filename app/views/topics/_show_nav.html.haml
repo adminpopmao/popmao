@@ -1,0 +1,9 @@
+<!-- 当前位置 -->
+.position
+  %em
+    当前位置：
+  = link_to '江海社区', :root
+  »
+  = link_to "#{@forum.name}", forum_path(@forum), :title=>"#{@forum.name}"
+  » 
+  = @topic.subject

@@ -1,0 +1,21 @@
+.topbar
+  #nav-operate
+    %table{:width=>"100%", :cellpadding=>"0", :cellspaeing=>"0", :border=>"0"}
+      %tr.vt
+        %td{:width=>"400"}
+          - if logged_in?
+            = image_tag 'face/none.gif', :id=>'iconimg', :width=>'16', :height=>'16', :align=>'absmiddle'
+            = link_to "#{current_user.login}", '/', :class=>'b', :id=>'td_userinfo_more'
+            %span.gray 新手上路
+            = link_to '设置', '/', :target=>'_blank', :title=>'设置中心'
+            = link_to '系统设置', manager_forums_path if current_user.admin?
+            = link_to '短消息', '/', :id=>'td_msg', :title=>'短消息', :class=>'icon_meg', :target=>'_blank'
+            = link_to '退出', :logout
+          - else
+            =link_to '登录', :login, :class=>"b"
+            =link_to '注册', :signup, :class=>"b"
+          %span#td_skin{:title=>"风格切换"}
+            =image_tag 'pwicon/style.gif', :style=>"cursor:pointer;", :align=>"absmiddle"
+        %td
+          %ul.fr
+

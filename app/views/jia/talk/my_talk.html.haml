@@ -1,0 +1,53 @@
+.main
+  .netfriend_msgboard.broadcast
+    .replybox
+      #icon_face_lists.icon.icon_face.c_weak{ :rel => "content" }
+        %a#icon_face{ :href => "javascript:;", :title => "" }
+          表情
+      %label.atxt.option_tips
+        %textarea#content.tdv{ :maxlength => "140", :rel => "unfold", :entermethod => "entercallback" }
+        %cite.c_weak
+          (
+          %em.c_auxi
+            0
+          \/140)
+      .post_broad.c_weak
+        #result.post_broad_lasttime
+          上次磨叽：今天要继续努力啊！
+        %span.sumbit
+          %span
+            %button#broadcast
+              发布
+    %h4.border_deep
+      我发表的磨叽
+    #lists
+      .dy_ulist.broad_list
+        .dy_user
+          %a.uface_small{ :href => "http://jia.19lou.com/?q=user/profile&amp;do=profile&amp;uid=12252551", :title => "" }
+            %span
+              %img{ :src => "http://avatar.19lou.com/m/4/127/12252551.jpg", :height => "50", :alt => "", :width => "50" }
+        .dy_main
+          %h5#online_12252551.show_send_mail.c_auxi
+            %a{ :href => "http://jia.19lou.com/?q=user/profile&amp;do=profile&amp;uid=12252551" }
+              ntyangxd
+          .broadlist_content
+            今天要继续努力啊！
+            %span.c_weak
+              2009-10-27 08:53
+          .board_option
+            %a{ :href => "http://app.19lou.com/newsmonger/?q=common/reply&amp;nmId=230000003674", :title => "" }
+              回复(0)
+            %span.icon
+              |
+            转发(0)
+        .msg_option{ :style => "display: none;" }
+          %a#del_230000003674_0.imskin{ :href => "javascript:;", :title => "" }
+            删除
+      .msg_msgboard_total
+        .pages.c_weak
+          %span
+            上一页
+          %span
+            1
+          %span
+            下一页
