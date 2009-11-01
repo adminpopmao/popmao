@@ -3,7 +3,7 @@
     %li.newreplay
       = link_to '回复', "javascript:$('post_content').focus();", :title=>"回复", :class=>"btn_reply"
     %li.postnewthread
-      = render :partial=>'forums/post_topic'
+      = render :partial=>'forums/post_topic', :locals=>{:serial=>"0"}
   <!-- 分页 -->
   .pages
     %ul
